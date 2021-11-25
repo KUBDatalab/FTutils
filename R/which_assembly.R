@@ -6,8 +6,9 @@ library(readxl)
 # DONE Embed data in the package
 # TODO brug de embeddede data her
 
-assemb <- read_xlsx("data-raw/samlinger_siden_1953.xlsx")
+# assemb <- read_xlsx("data-raw/samlinger_siden_1953.xlsx")
 
+assemb <- samlinger_dato
 
 
 which_assembly <- function(date){
@@ -15,7 +16,7 @@ which_assembly <- function(date){
     stop("Error - Remember that the date should be in quotes and in a format like this: 'YYYY-MM-DD'")
   } else if (str_detect(date, "^\\d{4}-\\d{2}-\\d{2}$") == TRUE) {
     matched_samling <- assemb %>%
-      mutate(match = ymd(date) %within% period) %>%
+      mutate(match = (ymd(date) %within% period)) %>%
       filter(match == TRUE) %>%
       pull(Samling)
     matched_samling
@@ -31,3 +32,4 @@ which_assembly <- function(date){
     stop('Dates must be given in the ISO 8601-format("YYYY-MM-DD") and periods in the format "YYYY-MM-DD:YYYY-MM-DD"')
   }
 }
+
