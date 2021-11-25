@@ -3,7 +3,9 @@ library(lubridate)
 library(readxl)
 
 
-# TODO Embed data in the package
+# DONE Embed data in the package
+# TODO brug de embeddede data her
+
 assemb <- read_xlsx("data-raw/samlinger_siden_1953.xlsx")
 
 

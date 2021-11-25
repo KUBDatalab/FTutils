@@ -9,6 +9,8 @@
 #' }
 #'
 #'
-ugedage <- c("Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag")
+#'
+require(readr)
+samlinger_dato <- read_csv("data-raw/samlinger_dato.csv")
 
-usethis::use_data(ugedage, overwrite = TRUE)
+usethis::use_data(samlinger_dato, overwrite = TRUE)
