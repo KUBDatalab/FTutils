@@ -1,5 +1,5 @@
 Package: FTutils
-Title: What the Package Does (One Line, Title Case)
+Title: Folketings utilities
 Version: 0.0.0.9000
 Authors@R: c(
     person("Max Odsbjerg", "Pedersen", , "maop@kb.dk", role = c("aut", "cre"),

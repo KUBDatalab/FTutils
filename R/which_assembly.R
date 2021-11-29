@@ -1,8 +1,12 @@
-#' Returnerer samling for en given dato
-#'
+#'  Returner samlinger
+#' @description
+#'  Returnerer samling for en given dato
+#' @title which_assembly
+#' @details which_assembly
 #' @param x en teksstreng formatteret som YYYY-MM-DD
-#'
+#' @name which_assembly
 #' @export
+#'
 #' @examples
 #' # Returnerer 20201 for 1. samling i 2020:
 #' which_assembly("2021-04-01")
