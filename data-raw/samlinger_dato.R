@@ -5,6 +5,7 @@
 #' @details samlinger_dato
 #' @param x en teksstreng formatteret som YYYY-MM-DD
 #' @export
+#' @name samlinger_dato
 #' @examples
 #' # Returnerer 20201 for 1. samling i 2020:
 #' which_assembly("2021-04-01")
