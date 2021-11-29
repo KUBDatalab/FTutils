@@ -2,7 +2,7 @@ Package: FTutils
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: c(
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Max Odsbjerg", "Pedersen", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
     person("Christian", "Knudsen", , "cbk@kb.dk", role = c("aut"),
            comment = c(ORCID = "0000-0002-9816-768X"))           
