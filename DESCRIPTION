@@ -1,9 +1,12 @@
 Package: FTutils
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R: c(
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+    person("Christian", "Knudsen", , "cbk@kb.dk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9816-768X"))           
+           )
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
@@ -12,6 +15,10 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
-LazyData: true
+Imports:
+  tidyverse,
+  lubridate,
+  readxl
 Suggests:
   testthat
+LazyData: true
