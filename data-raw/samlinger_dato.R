@@ -8,7 +8,7 @@
 #'   ...
 #' }
 #'
-#'
+#' @export
 #'
 require(readr)
 
