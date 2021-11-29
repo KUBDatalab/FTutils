@@ -4,7 +4,10 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
+<<<<<<< HEAD
     person("Christian", "Knudsen", , "cbk@kb.dk", role = c("aut"),
+=======
+>>>>>>> 2229cb8f6204f9bebb0d9c507a805d15d4ac6d32
            comment = c(ORCID = "0000-0002-9816-768X"))           
            )
 Description: What the package does (one paragraph).
