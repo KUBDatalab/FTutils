@@ -7,6 +7,8 @@
 #'   \code{name}, \code{n} and \code{prop} (\code{n} divided by total number
 #'   of applicants in that year, which means proportions are of people of
 #'   that sex with that name born in that year).
+#'   @name ugedate
+#'   @export
 "ugedage"
 
 #' datoer på samlinger.
