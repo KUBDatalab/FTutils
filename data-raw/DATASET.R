@@ -6,4 +6,4 @@ require(lubridate)
 DATASET <- read_csv("data-raw/samlinger_dato.csv") %>%
   mutate(period = interval(Startdato, Slutdato))
 
-usethis::use_data(DATASET, overwrite = TRUE)
+usethis::use_data(DATASET)
