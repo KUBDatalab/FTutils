@@ -17,7 +17,7 @@ library(readxl)
 
 
 
-assemb <- FTutils::samlinger_dato
+assemb <- FTutils::DATASET
 
 
 which_assembly <- function(date){
