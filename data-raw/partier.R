@@ -1,17 +1,4 @@
-#' Partier
-#'
-#' Et datasæt der indeholder partinavne og listebogstaver
-#' for partier i folketinget i perioden fra - til
-#'
-#'
-#' @format A data frame with 53940 rows and 10 variables:
-#' \describe{
-#'   \item{bogstav}{parti liste bogstav}
-#'   \item{navn}{partinavn}
-#'   ...
-#' }
-#'
-#'
+## code to prepare `partier` dataset goes here
 
 # vi skal have styr på partier der skifter bogstav.
 # det skal nok også over i en csv.
@@ -32,6 +19,8 @@ partier <- tribble(~bogstav, ~navn,
 "F", "SF – Socialistisk Folkeparti",
 "C", "Det Konservative Folkeparti")
 
-
-
 usethis::use_data(partier, overwrite = TRUE)
+
+#' @name partier
+#' @export
+"partier"
