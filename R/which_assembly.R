@@ -16,7 +16,7 @@ library(lubridate)
 library(readxl)
 
 
-
+data("samlinger_dato")
 assemb <- samlinger_dato
 
 
