@@ -3,9 +3,13 @@
 \docType{data}
 \name{samlinger_dato}
 \alias{samlinger_dato}
-\title{"Ann Veronica:  Modern Love Story"}
+\title{"Datoer for folketingssamlinger"}
 \format{
-A character vector with 12054 elements
+A tibble with 92 rows
+\describe{
+\item{Col1}{description of Col1}
+\item{Col2}{description of Col2}
+}
 }
 \source{
 \url{https://www.gutenberg.org/files/524/524-0.txt}
@@ -14,7 +18,7 @@ A character vector with 12054 elements
 samlinger_dato
 }
 \description{
-A data set containing the complete text of H. G. Wells 1909
-novel "Ann Veronica".
+Et datasæt der indeholder start og slutdatoer for folketingssamlinger
+mellem 6. oktober 1953 og 1. december 2021
 }
 \keyword{datasets}

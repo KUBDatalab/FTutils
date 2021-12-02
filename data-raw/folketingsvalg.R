@@ -1,18 +1,4 @@
-#' Folketingsvalg
-#'
-#' Datoer for folketingsvalg.
-#'
-#'
-#' @format A data frame with 53940 rows and 10 variables:
-#' \describe{
-#'   \item{bogstav}{parti liste bogstav}
-#'   \item{navn}{partinavn}
-#'   ...
-#' }
-#'
-#'
-
-# læs gerne korrektur!
+# code to prepare 'folketingsvalg' dataset
 
 
 library(lubridate)
@@ -45,3 +31,7 @@ folketingsvalg <- c(
 
 folketingsvalg <- ymd(folketingsvalg)
 usethis::use_data(folketingsvalg, overwrite = TRUE)
+#' @name folketingsvalg
+#' @export
+"folketingsvalg"
+
