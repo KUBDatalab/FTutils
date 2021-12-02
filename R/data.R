@@ -10,10 +10,13 @@ NULL
 #' mellem 6. oktober 1953 og 1. december 2021
 #'
 #' @source \url{https://www.gutenberg.org/files/524/524-0.txt}
-#' @format A tibble with 92 rows
+#' @format A tibble with 92 rows and 5 columns
 #' \describe{
-#'   \item{Col1}{description of Col1}
-#'   \item{Col2}{description of Col2}
+#'   \item{Samling}{description of Col1}
+#'   \item{Startdato}{description of Col2}
+#'   \item{Slutdato}{description of Col2}
+#'   \item{År}{description of Col2}
+#'   \item{samling}{description of Col2}
 #'   }
 "samlinger_dato"
 
@@ -37,15 +40,12 @@ NULL
 #' Ugedagenes navne på dansk
 #'
 #'
-#' @format A data frame with 53940 rows and 10 variables:
-#' \describe{
-#'   \item{price}{price, in US dollars}
-#'   \item{carat}{weight of the diamond, in carats}
-#'   ...
-#' }
+#' @format A character vector containing the danish weekdays:
 "ugedage"
 
-#' Traktordata fra Maxs fædrende gaard
+#' Traktordata
+#'
+#' Et datasæt med traktordata fra Maxs fædrende gaard
 #'
 #'
 #' @format A data frame with 53940 rows and 10 variables:
