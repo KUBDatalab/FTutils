@@ -1,6 +1,5 @@
 # code to prepare 'folketingsvalg' dataset
 
-
 library(lubridate)
 folketingsvalg <- c(
 "1953-09-22",

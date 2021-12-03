@@ -62,8 +62,9 @@ medlemmer
 
 tester <- "https://www.ft.dk/medlemmer/mf/k/karin-gaardsted"
 
-skrab_person_side <- function(url){
-  url <- url(url, "rb")
+skrab_person_side <- function(x){
+  urlen <- x
+  url <- url(x, "rb")
   test <- read_html(url)
   close(url)
 
@@ -79,17 +80,22 @@ skrab_person_side <- function(url){
   overskrifter <- df %>% html_element(css="strong") %>% html_text()
   texter <- df %>% html_text(trim=T)
   overskrifter <- c("url", "billed_link", "billed_alt", overskrifter)
-  texter <- c(url, billed_link, billed_alt, texter)
+  texter <- c(urlen, billed_link, billed_alt, texter)
   tibble(overskrifter = overskrifter, texter = texter)
 }
 
+skrab_person_side(test)
+
+skrab_person_side(tester)
+
 skrab_person_side <- possibly(skrab_person_side, NA)
 
-
+skrab_person_side(tester)
 resultat <- medlemmer %>%
   mutate(skrabet = map(link, skrab_person_side))
 
-resultat  %>% view()
-try()
 
 save(resultat, file="data-raw/foreløbigeresultater.rda")
+load("data-raw/foreløbigeresultater.rda")
+resultat %>% select(skrabet
+                    ) %>% tail()
