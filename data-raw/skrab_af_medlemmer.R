@@ -58,10 +58,6 @@ medlemmer <- medlemmer %>%
 
 # dernæst skal vi have hentet
 
-medlemmer
-
-tester <- "https://www.ft.dk/medlemmer/mf/k/karin-gaardsted"
-
 skrab_person_side <- function(x){
   urlen <- x
   url <- url(x, "rb")
@@ -84,18 +80,35 @@ skrab_person_side <- function(x){
   tibble(overskrifter = overskrifter, texter = texter)
 }
 
-skrab_person_side(test)
-
-skrab_person_side(tester)
 
 skrab_person_side <- possibly(skrab_person_side, NA)
 
-skrab_person_side(tester)
+
 resultat <- medlemmer %>%
   mutate(skrabet = map(link, skrab_person_side))
 
 
 save(resultat, file="data-raw/foreløbigeresultater.rda")
-load("data-raw/foreløbigeresultater.rda")
-resultat %>% select(skrabet
-                    ) %>% tail()
+load(file="data-raw/foreløbigeresultater.rda")
+
+resultat %>% unnest(skrabet) %>%
+  pivot_wider(id_cols = link,
+              names_from = overskrifter,
+              values_from = texter,
+              values_fill = NA) %>%
+  select(link, Medlemsperiode, `Parlamentarisk karriere`) %>%
+  unnest(Medlemsperiode) %>%
+  unnest(`Parlamentarisk karriere`) %>%
+  mutate(Medlemsperiode = str_remove(Medlemsperiode, "Medlemsperiode")) %>%
+  rename(pk = `Parlamentarisk karriere`) %>%
+  mutate(pk = str_remove(pk, "Parlamentarisk karriere")) %>%
+  select(-pk)  %>%
+  separate_rows(Medlemsperiode, sep= "\\r\\n") %>%
+  mutate(Medlemsperiode = str_squish(Medlemsperiode)) %>%
+  filter(Medlemsperiode != "") %>%
+  mutate(datoer = str_extract_all(Medlemsperiode, "\\d{1,2}\\.\\s\\w{3,9}\\s\\d{4}")) %>%
+  mutate(id = 1:n()) %>%
+  rowwise() %>%
+  mutate(datoer = str_c(datoer, collapse="¤")) %>%
+  separate(datoer, sep = "¤", into=c("start", "slut")) %>%
+  view
