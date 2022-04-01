@@ -5,10 +5,13 @@
 \alias{samlinger_dato}
 \title{"Datoer for folketingssamlinger"}
 \format{
-A tibble with 92 rows
+A tibble with 92 rows and 5 columns
 \describe{
-\item{Col1}{description of Col1}
-\item{Col2}{description of Col2}
+\item{Samling}{description of Col1}
+\item{Startdato}{description of Col2}
+\item{Slutdato}{description of Col2}
+\item{År}{description of Col2}
+\item{samling}{description of Col2}
 }
 }
 \source{

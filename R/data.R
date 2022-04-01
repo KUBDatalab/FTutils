@@ -1,7 +1,14 @@
 #' FTutils
 #'
 #' Useful functions and tools for working with Danish parlamentary data.
-#'
+#' @title FTutils data
+#' @description
+#'  Datasets related to the Danish Parlament
+#' @details Danish Parlamentary data
+#' @name data
+
+
+
 NULL
 
 #' "Datoer for folketingssamlinger"
