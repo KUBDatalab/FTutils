@@ -3,7 +3,7 @@
 \docType{data}
 \name{traktor}
 \alias{traktor}
-\title{Traktordata fra Maxs fædrende gaard}
+\title{Traktordata}
 \format{
 A data frame with 53940 rows and 10 variables:
 \describe{
@@ -16,6 +16,6 @@ A data frame with 53940 rows and 10 variables:
 traktor
 }
 \description{
-Traktordata fra Maxs fædrende gaard
+Et datasæt med traktordata fra Maxs fædrende gaard
 }
 \keyword{datasets}
