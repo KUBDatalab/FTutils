@@ -50,6 +50,12 @@ NULL
 #' @format A character vector containing the danish weekdays:
 "ugedage"
 
+#' Datoer for folketingsvalg
+#'
+#'
+#' @format A character vector containing days for elections:
+"folketingsvalg"
+
 #' Traktordata
 #'
 #' Et datasæt med traktordata fra Maxs fædrende gaard

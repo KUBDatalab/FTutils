@@ -16,5 +16,6 @@ which_assembly
 }
 \examples{
 # Returnerer 20201 for 1. samling i 2020:
+library(FTutils)
 which_assembly("2021-04-01")
 }
