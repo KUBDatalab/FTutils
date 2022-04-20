@@ -17,10 +17,7 @@ library(readxl)
 
 
 data("samlinger_dato")
-assemb <- samlinger_dato %>%
-  mutate(period = interval(Startdato, Slutdato))
-
-
+assemb <- samlinger_dato
 
 which_assembly <- function(date){
   if (is.character(date) == FALSE) {
