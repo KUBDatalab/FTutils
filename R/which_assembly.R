@@ -8,6 +8,9 @@
 #' @export
 #' @importFrom lubridate %within%
 #' @import lubridate
+#' @importFrom stringr str_detect
+#' @importFrom dplyr mutate
+#' @importFrom dplyr filter
 #' @examples
 #' # Returnerer 20201 for 1. samling i 2020:
 #' library(FTutils)
@@ -23,17 +26,17 @@ which_assembly <- function(date){
   assemb <- FTutils::samlinger_dato
   if (is.character(date) == FALSE) {
     stop("Error - Remember that the date should be in quotes and in a format like this: 'YYYY-MM-DD'")
-  } else if (stringr::str_detect(date, "^\\d{4}-\\d{2}-\\d{2}$") == TRUE) {
+  } else if (str_detect(date, "^\\d{4}-\\d{2}-\\d{2}$") == TRUE) {
     matched_samling <- assemb %>%
-      dplyr::mutate(match = (ymd(date) %within% period)) %>%
-      dplyr::filter(match) %>%
+      mutate(match = (ymd(date) %within% period)) %>%
+      filter(match) %>%
       dplyr::pull(Samling)
     matched_samling
   } else if(str_detect(date, "^\\d{4}-\\d{2}-\\d{2}:\\d{4}-\\d{2}-\\d{2}$") == TRUE) {
     periods <- str_split(date, ":")
     matched_period <-assemb %>%
       mutate(interval_over = int_overlaps(interval(ymd(periods[[1]][1]), ymd(periods[[1]][2])), period)) %>%
-      dplyr::filter(interval_over) %>%
+      filter(interval_over) %>%
       pull(Samling)
 
     matched_period

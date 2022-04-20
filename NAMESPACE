@@ -3,5 +3,8 @@
 export("%>%")
 export(which_assembly)
 import(lubridate)
+importFrom(dplyr,filter)
+importFrom(dplyr,mutate)
 importFrom(lubridate,"%within%")
 importFrom(magrittr,"%>%")
+importFrom(stringr,str_detect)
