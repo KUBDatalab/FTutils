@@ -19,7 +19,6 @@ library(readxl)
 data("samlinger_dato")
 assemb <- samlinger_dato
 
-
 which_assembly <- function(date){
   if (is.character(date) == FALSE) {
     stop("Error - Remember that the date should be in quotes and in a format like this: 'YYYY-MM-DD'")
