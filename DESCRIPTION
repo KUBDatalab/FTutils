@@ -20,7 +20,8 @@ Imports:
     stringr,
     lubridate,
     readxl,
-    magrittr
+    magrittr,
+    rlang
 Suggests:
   testthat
 LazyData: true

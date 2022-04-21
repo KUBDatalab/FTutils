@@ -9,8 +9,11 @@
 #' @importFrom lubridate %within%
 #' @import lubridate
 #' @importFrom stringr str_detect
+#' @importFrom stringr str_split
 #' @importFrom dplyr mutate
+#' @importFrom dplyr pull
 #' @importFrom dplyr filter
+#' @importFrom rlang .data
 #' @examples
 #' # Returnerer 20201 for 1. samling i 2020:
 #' library(FTutils)
@@ -30,14 +33,14 @@ which_assembly <- function(date){
     matched_samling <- assemb %>%
       mutate(match = (ymd(date) %within% period)) %>%
       filter(match) %>%
-      dplyr::pull(Samling)
+      dplyr::pull(.data$Samling)
     matched_samling
   } else if(str_detect(date, "^\\d{4}-\\d{2}-\\d{2}:\\d{4}-\\d{2}-\\d{2}$") == TRUE) {
     periods <- str_split(date, ":")
     matched_period <-assemb %>%
       mutate(interval_over = int_overlaps(interval(ymd(periods[[1]][1]), ymd(periods[[1]][2])), period)) %>%
-      filter(interval_over) %>%
-      pull(Samling)
+      filter(.data$interval_over) %>%
+      pull(.data$Samling)
 
     matched_period
   } else {
