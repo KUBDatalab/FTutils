@@ -3,7 +3,7 @@ Title: Folketings utilities
 Version: 0.0.0.9000
 Authors@R: c(
     person("Max Odsbjerg", "Pedersen", , "maop@kb.dk", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
+           comment = c(ORCID = "0000-0001-9215-5605")),
     person("Christian", "Knudsen", , "cbk@kb.dk", role = c("aut"),
            comment = c(ORCID = "0000-0002-9816-768X"))           
            )
@@ -20,7 +20,8 @@ Imports:
     stringr,
     lubridate,
     readxl,
-    magrittr
+    magrittr,
+    rlang
 Suggests:
   testthat
 LazyData: true
