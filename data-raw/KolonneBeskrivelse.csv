@@ -1,0 +1,235 @@
+"id","entitetnavn","kollonenavn","beskrivelse","opdateringsdato"
+0,"Afstemning","id","Unik identifikation af Aktør",2015-09-24 12:48:31.82
+1,"Afstemning","kommentar","Afstemningskommentar (ændring af stemmer ved fejlafstemninger)",2015-09-24 12:48:31.82
+2,"Afstemning","konklusion","Afstemningsresultat, hvor der stemmes om et forslag som helhed (i mods. til ændringsforslag til forslaget) – se også Sag",2015-09-24 12:48:31.82
+3,"Afstemning","mødeid","En afstemning foregår i et møde.",2015-09-24 12:48:31.82
+4,"Afstemning","nummer","Afstemningsnummer, fortløbende indenfor en periode af typen samling.",2015-09-24 12:48:31.82
+5,"Afstemning","sagstrinid","En afstemning er tilknyttet et sagstrin, som er en behandling.",2015-09-24 12:48:31.82
+6,"Afstemning","typeid","En afstemning har en type.",2015-09-24 12:48:31.82
+7,"Afstemning","vedtaget","Angiver om afstemningen om forslaget eller lign. er vedtaget.",2015-09-24 12:48:31.82
+8,"Afstemningstype","id","Unik identifikation af afstemningstype",2015-09-24 12:48:31.82
+9,"Afstemningstype","type","En afstemning har en type.",2015-09-24 12:48:31.82
+10,"Aktør","biografi","Biografi for personen eller gruppen",2015-09-24 12:48:31.82
+11,"Aktør","efternavn","Kun for typen ´Person´",2015-09-24 12:48:31.82
+12,"Aktør","fornavn","Kun for typen ´Person´",2015-09-24 12:48:31.82
+13,"Aktør","gruppenavnkort","Forkortelse - hvis aktøren er en gruppe (udvalg, kommission, folketingsgruppe)",2015-09-24 12:48:31.82
+14,"Aktør","id","Unik identifikation af Aktør",2015-09-24 12:48:31.82
+15,"Aktør","navn","personens for- og efternavn  - ellers lang form af navn",2015-09-24 12:48:31.82
+16,"Aktør","periodeid","Kun for udvalg, Folketinget og kommissioner og hverv. I disse tilfælde angiver det gruppens tilknytning til periodetypen ´samling´ ",2015-09-24 12:48:31.82
+17,"Aktør","slutdato","Kun for grupper, ministertitler- og -områder",2015-09-24 12:48:31.82
+18,"Aktør","startdato","Kun for grupper, ministertitler- og -områder",2015-09-24 12:48:31.82
+19,"Aktør","typeid","Intern (person), Udvalg, Parlamentarisk forsamling, Anden gruppe, Folketingsgruppe, Kommission, Ministerområde, Ministertitel",2015-09-24 12:48:31.82
+20,"AktørAktør","fraaktørid","Id på person, som er knyttet til  ""gruppen"" ",2015-09-24 12:48:31.82
+21,"AktørAktør","id","Unik identifikation af aktøraktør relation",2015-09-24 12:48:31.82
+22,"AktørAktør","rolleid","Relation imellem Person og Gruppe. Alternativt Gruppe og Gruppe.",2015-09-24 12:48:31.82
+23,"AktørAktør","slutdato","Medlemskabets slutdato, for ministertitel og -område  ansvarsområdets slutdato ; null hvis aktiv",2015-09-24 12:48:31.82
+24,"AktørAktør","startdato","Medlemskabets startdato, for ministertitel og -område ansvarsområdets startdato",2015-09-24 12:48:31.82
+25,"AktørAktør","tilaktørid","Id på ”gruppen” (udvalg, Folketinget og kommissioner eller hverv)",2015-09-24 12:48:31.82
+26,"AktørAktørRolle","id","Unik identifikation af rollen på aktøraktør relation",2015-09-24 12:48:31.82
+27,"AktørAktørRolle","rolle","Relation imellem Person og Gruppe. Alternativt Gruppe og Gruppe.",2015-09-24 12:48:31.82
+28,"Aktørtype","id","Unik identifikation af aktørtype",2015-09-24 12:48:31.82
+29,"Aktørtype","type","Aktørtype: Intern (person), Udvalg, Parlamentarisk forsamling, Anden gruppe, Folketingsgruppe, Kommission, Ministerområde, Ministertitel",2015-09-24 12:48:31.82
+30,"Dagsordenspunkt","forhandling","En tekstuel udgave af forhandlingskoden.",2015-09-24 12:48:31.82
+31,"Dagsordenspunkt","forhandlingskode","Forhandlingskode f.eks. FF, FL mv. angiver forhandlingstypen på udvalgs-mødet, f.eks. Forhandling lukket (FL).  ",2015-09-24 12:48:31.82
+32,"Dagsordenspunkt","id","Unik identifikation af dagsordenspunkt",2015-09-24 12:48:31.82
+33,"Dagsordenspunkt","kommentar","Kommentar til dagsordenens indhold: f.eks. ""Politisk drøftelse"", ""Politisk drøftelse/rådskonklusioner""",2015-09-24 12:48:31.82
+34,"Dagsordenspunkt","kørebemærkning","Kun for møder i Europaudvalget: Kørebemærkningen udtrykker formands-skabets hensigt med behandlingen af det pågældende punkt  på rådsmødet. Der er ingen fast liste af kørebemærkninger.",2015-09-24 12:48:31.82
+35,"Dagsordenspunkt","mødeid","Et Møde indeholder et antal Dagsordenspunkter.",2015-09-24 12:48:31.82
+36,"Dagsordenspunkt","nummer","Punktnummer som på dagsordenen",2015-09-24 12:48:31.82
+37,"Dagsordenspunkt","offentlighedskode","Kun offentlige dagsordenspunkter udstilles i Åben data. Hvis et møde indeholder ikke offentlige dagsordenspunkter vil disse ikke fremgå.",2015-09-24 12:48:31.82
+38,"Dagsordenspunkt","sagstrinid","Et Dagsordenspunkt kan være afledt af en behandling (Sagstrin).",2015-09-24 12:48:31.82
+39,"Dagsordenspunkt","superid","Dagsordenspunkter kan optræde i en hierakisk struktur, og dermed have et overordnet Dags-ordenspunkt igennem superid.",2015-09-24 12:48:31.82
+40,"Dagsordenspunkt","titel","Titel på dagsordenspunkt",2015-09-24 12:48:31.82
+41,"DagsordenspunktDokument","dagsordenspunktid",NA,2015-09-24 12:48:31.82
+42,"DagsordenspunktDokument","dokumentid",NA,2015-09-24 12:48:31.82
+43,"DagsordenspunktDokument","id","Unik identifikation af relationen imellem dagsordenspunkt og dokument",2015-09-24 12:48:31.82
+44,"DagsordenspunktDokument","note",NA,2015-09-24 12:48:31.82
+45,"DagsordenspunktSag","dagsordenspunktid",NA,2015-09-24 12:48:31.82
+46,"DagsordenspunktSag","id","Unik identifikation af relationen imellem dagsordenpunkt og sag",2015-09-24 12:48:31.82
+47,"DagsordenspunktSag","sagid",NA,2015-09-24 12:48:31.82
+48,"Dokument","dagsordenudgavenummer","For dagsordener dagsordenens udgave eller mødenummer",2015-09-24 12:48:31.82
+49,"Dokument","dato","Dokumentets dato, som er afsenderens påførte dato.",2015-09-24 12:48:31.82
+50,"Dokument","frigivelsesdato","benyttes til sortering af søgeresultater på web: første omdelingsdato svarer til hvornår dokumentet har skiftet status til endeligt. Omtryk giver en ny omdelingsdato (se Omtryk).
+",2015-09-24 12:48:31.82
+51,"Dokument","grundnotatstatus","Kun for kommisionsforslag, ""Intet, Lovet, Anmodet, Modtaget""
+ ",2015-09-24 12:48:31.82
+52,"Dokument","id","Unik identifikation af dokument",2015-09-24 12:48:31.82
+53,"Dokument","kategoriid","nøgle til kategorisering af dokumenttype",2015-09-24 12:48:31.82
+54,"Dokument","modtagelsesdato","Dato hvor Folketinget har modtaget dokumentet.",2015-09-24 12:48:31.82
+55,"Dokument","offentlighedskode","Kode angiver om dokumentet er offentligt, internt eller fortroligt. Åbne data skal kun eksponere offentlige dokumenter.",2015-09-24 12:48:31.82
+56,"Dokument","paragraf","Titlen på  den finanslovparagraf, dokumentet er henført til. jf. paragraf nummer.",2015-09-24 12:48:31.82
+57,"Dokument","paragrafnummer","Nummeret på den finanslovparagraf, dokumentet er henført til, jf. paragraf. ",2015-09-24 12:48:31.82
+58,"Dokument","procedurenummer","For kommisionsforslagsdokumenttyper, henvisning til sag, som binder kommissionsforslag sammen.
+
+F. eks. ""COD/2011/0187"" 
+
+",2015-09-24 12:48:31.82
+59,"Dokument","spørgsmålsid","For svardokumenter, henvisning til spørgsmålsdokumentet.",2015-09-24 12:48:31.82
+60,"Dokument","spørgsmålsordlyd","For spørgsmålsdokumenter, spørgsmålets ordlyd
+",2015-09-24 12:48:31.82
+61,"Dokument","spørgsmålstitel","For spørgsmålsdokumenter, spørgsmålets titel
+",2015-09-24 12:48:31.82
+62,"Dokument","statusid","Se Dokumentstatus",2015-09-24 12:48:31.82
+63,"Dokument","titel","Dokumentets titel. For § 20-spørgsmål: spørgsmålets ordlyd.
+",2015-09-24 12:48:31.82
+64,"Dokument","typeid","Nøgle til dokumenttype - diskarkiverne er organiseret efter denne type.
+",2015-09-24 12:48:31.82
+65,"DokumentAktør","aktørid","Reference til Aktør",2015-09-24 12:48:31.82
+66,"DokumentAktør","dokumentid","Reference til Dokument",2015-09-24 12:48:31.82
+67,"DokumentAktør","id","Unik identifikation af relationen imellem dokument og aktør",2015-09-24 12:48:31.82
+68,"DokumentAktør","rolleid","Et dokument kan have flere aktører tilknyttet med forskellige roller, f.eks. spørger, minister.",2015-09-24 12:48:31.82
+69,"DokumentAktørRolle","id","Unik identifikation af rollen på relationen imellem dokument og aktør",2015-09-24 12:48:31.82
+70,"DokumentAktørRolle","rolle",NA,2015-09-24 12:48:31.82
+71,"Dokumentkategori","id","Unik identifikation af dokumentkategori",2015-09-24 12:48:31.82
+72,"Dokumentkategori","kategori","Kan f.eks. være Notat, Diverse, Henvendelse, Samlenotat, Forslag til direk-tiv, Meddelelse, Betænkning m.v., Samlenotat, Grundnotat, EU note, Info note,§ 20-spørgsmål, Aktstykke, Fremsættelsestale, Udvalgsspørgsmål, Samrådsspørgsmål, Endeligt svar, Supplerende svar, Forslag til forordning, Andre forberedende retsakter, Meddelelse/rapport, Forslag som fremsat, Forslag som vedtaget, Optryk efter 2.beh, Dagsorden",2015-09-24 12:48:31.82
+73,"Dokumentstatus","id","Unik identifikation af dokumentstatus",2015-09-24 12:48:31.82
+74,"Dokumentstatus","status",NA,2015-09-24 12:48:31.82
+75,"Dokumenttype","id","Unik identifikation af dokumenttype",2015-09-24 12:48:31.82
+76,"Dokumenttype","type","Typer: Bilag, Rådsmødedokument, Kommissionsforslag, § 20-spørgsmål, Spørgsmål, Svar,Grundnotat, Aktstykke, EU-note, Info-note",2015-09-24 12:48:31.82
+77,"Emneord","emneord","Navnet på emneord f.eks. ""integration"", ""aktier og værdipapirer"" etc.",2015-09-24 12:48:31.82
+78,"Emneord","id","Unik identifikation af emneord",2015-09-24 12:48:31.82
+79,"Emneord","typeid","Kode for typerne: Kontrolleret, Ukontrolleret, Lovsagsnavn, Thesaurus (eurovoc), Kontonummer, Sagsområde",2015-09-24 12:48:31.82
+80,"__RefactorLog","OperationKey",NA,2015-09-24 12:48:31.82
+81,"EmneordDokument","dokumentid",NA,2015-09-24 12:48:31.82
+82,"EmneordDokument","emneordid",NA,2015-09-24 12:48:31.82
+83,"EmneordDokument","id","Unik identifikation af relationen imellem emneord og dokument",2015-09-24 12:48:31.82
+84,"EmneordSag","emneordid",NA,2015-09-24 12:48:31.82
+85,"EmneordSag","id","Unik identifikation af relationen imellem emneord og sag",2015-09-24 12:48:31.82
+86,"EmneordSag","sagid",NA,2015-09-24 12:48:31.82
+87,"Emneordstype","id","Unik identifikation af emneordstype",2015-09-24 12:48:31.82
+88,"Emneordstype","type","Kode for typerne: Kontrolleret, Ukontrolleret, Lovsagsnavn, Thesaurus (eurovoc), Kontonummer, Sagsområde",2015-09-24 12:48:31.82
+89,"Fil","dokumentid","Et dokument kan have en række filer tilknyttet.",2015-09-24 12:48:31.82
+90,"Fil","filurl","link til www.ft.dk. Link til den fysiske fil.",2015-09-24 12:48:31.82
+91,"Fil","format","Fil endelse f.eks. xml, doc eller pdf",2015-09-24 12:48:31.82
+92,"Fil","id","Unik identifikation af fil",2015-09-24 12:48:31.82
+93,"Fil","titel","Filens navn",2015-09-24 12:48:31.82
+94,"Fil","variantkode","(VariantKode=Variant) P=Produktion, T=Tilbageholdt, A=Arkivformat, O=Offentlig format, V=Visningsformat, S=Signeret dokument, Skan - PDF = PDF variant af det skannede dokument, Skan - TIF = TIF variant af det skannede dokument, Skan - RTF = RTF variant af det skannede dokument",2015-09-24 12:48:31.82
+95,"Fil","versionsdato","Dato for nyeste version af fil. Filer er versionerede. men kun sidste version udstilles.",2015-09-24 12:48:31.82
+96,"IdMap","entity",NA,2015-09-24 12:48:31.82
+97,"IdMap","id",NA,2015-09-24 12:48:31.82
+98,"IdMap","originalid",NA,2015-09-24 12:48:31.82
+99,"Møde","dagsordenurl","Dokument, som er knyttet til et møde (sidste udgave). Link til ft.dk f.eks. Møder i salen: http://www.ft.dk/salen/20131/dagsorden/20131_M62.pdf eller Udvalgsmøder (med bilag): http://www.ft.dk/Folketinget/udvalg_delegationer_kommissioner/Udvalg/Miljoe_og_planlaegningsudvalget/Kalender/Vis.aspx?session=20131&meetingNumber=1113101&abbreviation=MIU&se=1",2015-09-24 12:48:31.82
+100,"Møde","dato","Afholdelsesdato",2015-09-24 12:48:31.82
+101,"Møde","id","Unik identifikation af møde",2015-09-24 12:48:31.82
+102,"Møde","lokale","Lokale angivelse",2015-09-24 12:48:31.82
+103,"Møde","nummer","Møder i salen har et fortløbende nummer indenfor en periode af typen samling. Udvalgsmøder har et valgfrit mødenummer, som pt. kun bruges af Europaudvalget.",2015-09-24 12:48:31.82
+104,"Møde","offentlighedskode",NA,2015-09-24 12:48:31.82
+105,"Møde","periodeid","Et møde foregår i en periode af typen samling",2015-09-24 12:48:31.82
+106,"Møde","starttidsbemærkning","Beskrivelse af mødets omtrentlige starttidspunkt f.eks. ""5 min. efter afstemningerne – dog tidligst kl. 12""",2015-09-24 12:48:31.82
+107,"Møde","statusid","Status for mødet: Afholdt,Aflyst,Dagsorden låst,Udsat,Under forberedelse",2015-09-24 12:48:31.82
+108,"Møde","titel","Mødets titel f.eks. ""møde i salen""",2015-09-24 12:48:31.82
+109,"Møde","typeid","Typer: Andet møde, Møde i salen, Udvalgsmøde",2015-09-24 12:48:31.82
+110,"EntitetBeskrivelse","beskrivelse","Beskrivelse af den enkelte entitet f.eks. ""Aktør er en samlet betegnelse for de personer, grupper og organisationer, som har roller i det parlamentariske arbejde.""",2015-09-24 12:48:31.82
+111,"EntitetBeskrivelse","entitetnavn","Navn på entiteten",2015-09-24 12:48:31.82
+112,"EntitetBeskrivelse","id",NA,2015-09-24 12:48:31.82
+113,"MødeAktør","aktørid",NA,2015-09-24 12:48:31.82
+114,"MødeAktør","id","Unik identifikation af relationen imellem møde og aktør",2015-09-24 12:48:31.82
+115,"MødeAktør","mødeid",NA,2015-09-24 12:48:31.82
+116,"KolloneBeskrivelse","beskrivelse","Beskrivelse af indeholdet i den enkelte kollone f.eks. dagsordensurl på møde",2015-09-24 12:48:31.82
+117,"KolloneBeskrivelse","entitetnavn","Tabel eller entitet som feltet tilhører.",2015-09-24 12:48:31.82
+118,"KolloneBeskrivelse","id",NA,2015-09-24 12:48:31.82
+119,"KolloneBeskrivelse","kollonenavn","Kollone som beskrivelsen gælder for",2015-09-24 12:48:31.82
+120,"Mødestatus","id","Unik identifikation af mødestatus",2015-09-24 12:48:31.82
+121,"Mødestatus","status","Status for mødet: Foreløbig, Planlagt, Afholdt",2015-09-24 12:48:31.82
+122,"Mødetype","id","Unik identifikation af mødetype",2015-09-24 12:48:31.82
+123,"Mødetype","type","Typer: Andet møde, Møde i salen, Udvalgsmøde",2015-09-24 12:48:31.82
+124,"Omtryk","begrundelse","Begrundelse for omtryk f.eks. Ændret adressat eller Ændret besvarelsesdato",2015-09-24 12:48:31.82
+125,"Omtryk","dato","Dato for omtryk",2015-09-24 12:48:31.82
+126,"Omtryk","dokumentid","Reference til det omtrykte dokument. Et dokument kan omtrykkes et antal gange.",2015-09-24 12:48:31.82
+127,"Omtryk","id","Unik identifikation af omtryk",2015-09-24 12:48:31.82
+128,"Periode","id","Unik identifikation af en periode",2015-09-24 12:48:31.82
+129,"Periode","kode","Kort version af titel, f. eks. ""20072"".",2015-09-24 12:48:31.82
+130,"Periode","slutdato","Perioden slutdato",2015-09-24 12:48:31.82
+131,"Periode","startdato","Perioden startdato",2015-09-24 12:48:31.82
+132,"Periode","titel","lang tekst: ""2012-13""",2015-09-24 12:48:31.82
+133,"Periode","type","type: samling, finansår, andre",2015-09-24 12:48:31.82
+134,"Sag","afgørelse","Afgørelsestekst (Gælder kun aktstykker) - påtegning",2015-09-24 12:48:31.82
+135,"Sag","afgørelsesdato","Dato for afgørelse (kun aktstykker)",2015-09-24 12:48:31.82
+136,"Sag","afgørelsesresultatkode","(B = Bortfaldet, F = Forkastet, TE = Taget til efterretning,  TF =Tiltrådt af et flertal i udvalget, TT = Trukket tilbage, TU =Tiltrådt af hele udvalget)",2015-09-24 12:48:31.82
+137,"Sag","afstemningskonklusion","Konklusionen fra den endelige afstemning vedrørende forslaget. Identiske med den tilhørende Afstemmnings konklusion.",2015-09-24 12:48:31.82
+138,"Sag","baggrundsmateriale","Html-tekst med liste af links opdelt i grupper og anden tekst. Udfyldt for forslag, forespørgsler og redegørelser. ",2015-09-24 12:48:31.82
+139,"Sag","begrundelse","begrundelse for spørgsmålet (udfyldes kun for § 20-spørgsmål)",2015-09-24 12:48:31.82
+140,"Sag","deltundersagid","Reference til Sag som denne sag er delt under",2015-09-24 12:48:31.82
+141,"Sag","fremsatundersagid","Reference til Sag som denne sag er fremsat under",2015-09-24 12:48:31.82
+142,"Sag","id","Unik identifikation af Sag",2015-09-24 12:48:31.82
+143,"Sag","kategoriid","Regerings(lov)forslag, privat (lov)forslag, B 1 – regeringsforslag, B 1 – privat forslag, B 1 – privatforslag – eneste behandling. B 2, B 3, S, US, Alm. del, Beretninger af almen art,  §-markeret alm. del, Info-noter, FT, Beretning, Endelig betænkning, Notat",2015-09-24 12:48:31.82
+144,"Sag","lovnummer","Tildelt nummer ved stadfæstelsen af vedtagne forslag (kun lovforslag)",2015-09-24 12:48:31.82
+145,"Sag","lovnummerdato","Dato for stadfæstelse (kun lovforslag)",2015-09-24 12:48:31.82
+146,"Sag","nummer","sagsnummer, f. eks. ""L 17 B"", ""Det Europæiske Råd 27-28/6-13"", ""Rådsmøde 3224 - transport, tele og energi"", ""JOIN (2012) 0039"", ""KOM (2013) 0265"" Kombination af nummerprefix, nummer numerisk og nummerpostfix",2015-09-24 12:48:31.82
+147,"Sag","nummernumerisk","Numerisk angivelse af sagen",2015-09-24 12:48:31.82
+148,"Sag","nummerpostfix","En evt. bogstavværdi efter den numeriske del af Sagsnummeret, f.eks. A, B. Bruges når et forslag deles i flere.",2015-09-24 12:48:31.82
+149,"Sag","nummerprefix","Bogstavet foran den numeriske del af Sagsnummeret: Aktstk., B, F, L, MANUELL, R, S, US, V",2015-09-24 12:48:31.82
+150,"Sag","offentlighedskode","Koden angiver hvorvidt sagen er intern, offentlig eller forstrolig: I/O/F. Kun offentlige sager vises.",2015-09-24 12:48:31.82
+151,"Sag","paragraf","Titlen på den finanslovparagraf, sagen er henført til. jf. paragraf nummer.",2015-09-24 12:48:31.82
+152,"Sag","paragrafnummer","Nummeret på den finanslovparagraf, sagen er henført til, jf. paragraf. ",2015-09-24 12:48:31.82
+153,"Sag","periodeid","Den navngivne periode, hvor Sagen behandles",2015-09-24 12:48:31.82
+154,"Sag","resume","Resume er en kort opsummering af et forslags indhold.",2015-09-24 12:48:31.82
+155,"Sag","retsinformationsurl","Link til den stadfæstede lov på retsinfo.dk.",2015-09-24 12:48:31.82
+156,"Sag","rådsmødedato","Rådsmødedato - mødets start",2015-09-24 12:48:31.82
+157,"Sag","statsbudgetsag","statsbudgetsag (boolean). Hvis den er sat, får bilags- og spørgsmålsnummereringen paragrafnumre (med §).",2015-09-24 12:48:31.82
+158,"Sag","statusid","Nøgle til sagsstatus (Værdier: 1. (eneste) behandling/Vedtaget, 1. beh./Direkte til 2. beh., 1. beh./Henvist til udvalg, 2. beh. afbrudt/henvist til udvalg, 2. beh./Direkte til 3. beh., 2. beh./Forkastet, 2. beh./Henvist til udvalg, 2. beh/Vedtaget, 3. beh./Forkastet, 3.beh./Vedtaget, Afgivet, Afholdt, Aflyst, Afsluttet, Afventer opfølgning, Anmeldt, Behandlet, Beretning afgivet, Besvaret, endeligt, Besvaret, foreløbigt, Betænkning afgivet, Bortfaldet, Delt, Eneste behandling/Behandling afbrudt/udsat, Eneste behandling/Vedtaget, Foreløbig, Foretaget, Forhandlet, Forkastet, Fremmet, Fremsat, Fremsat/henvist til udvalg, Godkendt orlov, Igangværende, Ikke afgjort, Ingen forhandling, Ophør anmeldt, Stadfæstet, Stedfortræder godkendt, Taget til efterretning, Tilbagetaget, Tiltrådt, Udgået, Vedtaget)",2015-09-24 12:48:31.82
+159,"Sag","titel","lang sagstitel - f.eks. formel forslagstitel i forslag som fremsat. Forespørgsler har ingen titel, så her benyttes den fulde ordlyd.",2015-09-24 12:48:31.82
+160,"Sag","titelkort","Sagens kort titel - en omformuleret kortere form af den lange titel. Har uofficiel karakter.",2015-09-24 12:48:31.82
+161,"Sag","typeid","""Lovforslag"", ""Beslutningsforslag"", ""Redegørelse"", ""Forespørgsel"", ""Forslag til vedtagelse"", ""§ 20-spørgsmål"", ""Aktstykke"", ""Alm. del"", ""UMF-del"", ""Kommissionsforslag"", ""Indkaldelse af stedfortræder"", ""Statsrevisorerne""",2015-09-24 12:48:31.82
+162,"SagAktør","aktørid","En Aktør kan have en rolle på en Sag.",2015-09-24 12:48:31.82
+163,"SagAktør","id","Unik identifikation af relationen imellem sag og aktør",2015-09-24 12:48:31.82
+164,"SagAktør","rolleid","Liste af aktør roller: Adressat,Afgivet af,Afsender,Behandles i,Besvaret af,Deltager,Forslagsstiller,Kontakt,Kopi til,Medspørger,Minister,Ministerområde,Modtager,Ordfører,Ordfører for forespørgerne,Ordfører for forslagsstillerne,Relevant for,Spørger,Stiller,Stiller/MFU,Taler,Til",2015-09-24 12:48:31.82
+165,"SagAktør","sagid","En Sag kan have flere Aktører.",2015-09-24 12:48:31.82
+166,"SagAktørRolle","id","Unik identifikation af rolle på relationen imellem sag og aktør",2015-09-24 12:48:31.82
+167,"SagAktørRolle","rolle","Liste af aktør roller: Adressat,Afgivet af,Afsender,Behandles i,Besvaret af,Deltager,Forslagsstiller,Kontakt,Kopi til,Medspørger,Minister,Ministerområde,Modtager,Ordfører,Ordfører for forespørgerne,Ordfører for forslagsstillerne,Relevant for,Spørger,Stiller,Stiller/MFU,Taler,Til",2015-09-24 12:48:31.82
+168,"SagDokument","bilagsnummer","f. eks. ""Bilag 34"", ”Spørgsmål 11”, ""§ 6 Spørgsmål 1"", ”Samrådsspørgsmål C” Dokumentets evt. nummer i forhold til dets type i Sagen. Der findes tre nummerrækkefølger: Bilag, Spørgsmål, Samrådsspørgsmål.",2015-09-24 12:48:31.82
+169,"SagDokument","dokumentid","Et Dokument kan optræder i flere Sager.",2015-09-24 12:48:31.82
+170,"SagDokument","frigivelsesdato","Omdelingsdato svarer til hvornår dokumentet har skiftet status til endeligt.  Omtryk giver en ny omdelingsdato.",2015-09-24 12:48:31.82
+171,"SagDokument","id","Unik identifikation af relationen imellem sag og dokument",2015-09-24 12:48:31.82
+172,"SagDokument","rolleid","Hovedtilknytning, Parallelomdelt på",2015-09-24 12:48:31.82
+173,"SagDokument","sagid","En Sag kan have flere Dokumenter tilknyttet.",2015-09-24 12:48:31.82
+174,"SagDokumentRolle","id","Unik identifikation af rolle på relationen imellem sag og dokument",2015-09-24 12:48:31.82
+175,"SagDokumentRolle","rolle",NA,2015-09-24 12:48:31.82
+176,"Sagskategori","id","Unik identifikation af sagskategori",2015-09-24 12:48:31.82
+177,"Sagskategori","kategori","Regerings(lov)forslag, privat (lov)forslag, B 1 – regeringsforslag, B 1 – privat forslag, B 1 – privatforslag – eneste behandling. B 2, B 3, S, US, Alm. del, Beretninger af almen art,  §-markeret alm. del, Info-noter, FT, Beretning, Endelig betænkning, Notat ",2015-09-24 12:48:31.82
+178,"Sagsstatus","id","Unik identifikation af sagsstatus",2015-09-24 12:48:31.82
+179,"Sagsstatus","status","Værdier: 1. (eneste) behandling/Vedtaget, 1. beh./Direkte til 2. beh., 1. beh./Henvist til udvalg, 2. beh. afbrudt/henvist til udvalg, 2. beh./Direkte til 3. beh., 2. beh./Forkastet, 2. beh./Henvist til udvalg, 2. beh/Vedtaget, 3. beh./Forkastet, 3.beh./Vedtaget, Afgivet, Afholdt, Aflyst, Afsluttet, Afventer opfølgning, Anmeldt, Behandlet, Beretning afgivet, Besvaret, endeligt, Besvaret, foreløbigt, Betænkning afgivet, Bortfaldet, Delt, Eneste behandling/Behandling afbrudt/udsat, Eneste behandling/Vedtaget, Foreløbig, Foretaget, Forhandlet, Forkastet, Fremmet, Fremsat, Fremsat/henvist til udvalg, Godkendt orlov, Igangværende, Ikke afgjort, Ingen forhandling, Ophør anmeldt, Stadfæstet, Stedfortræder godkendt, Taget til efterretning, Tilbagetaget, Tiltrådt, Udgået, Vedtaget",2015-09-24 12:48:31.82
+180,"Sagstrin","dato","aktivitetensdato",2015-09-24 12:48:31.82
+181,"Sagstrin","folketingstidende","Afsnit i Folketingstidende f.eks. ”Tillæg A”, ""FF"" (eller ”F”) (Folketingets Forhandlinger)",2015-09-24 12:48:31.82
+182,"Sagstrin","folketingstidendesidenummer","Sidenummer/Spaltenummer i Folketingstidende - kun op til 2009-10. Efter 2009-10 angives klokkeslæt i tillæg F ",2015-09-24 12:48:31.82
+183,"Sagstrin","folketingstidendeurl","reference til folketingstidende.dk, f.eks. http://www.folketingstidende.dk/samling/20121/lovforslag/L17/index.aspx#dok. Før ca. 2009 vises en side på www.ft.dk, f.eks. http://www.ft.dk/samling/20051/lovforslag/L17/sidehenvisninger.htm#dok. Inden 2004 findes de samme oplysninger på f.e ks. http://webarkiv.ft.dk/?samling/19981/lovforslag/L17/sidehenvisninger.htm#dok",2015-09-24 12:48:31.82
+184,"Sagstrin","id","Unik identifikation af sagstrin",2015-09-24 12:48:31.82
+185,"Sagstrin","sagid","Den sag, aktiviteten er tilknyttet ",2015-09-24 12:48:31.82
+186,"Sagstrin","statusid","Fuld liste:Afgivet, Afgivet/mundtligt, Afgivet/mundtligt og skriftligt, Afgivet/skriftligt, Afholdt, Aflyst, Anmeldt, Behandlet, Behandlet/afbrudt, Behandlet/Direkte til 2. beh., Behandlet/Direkte til 3. beh., Behandlet/Forkastet, Behandlet/Henvist til udvalg, Behandlet/Vedtaget, Behandling afbrudt/henvist til udvalg, Behandling afbrudt/udsat, Beretning afgivet, Besvaret, Betænkning afgivet, Bortfaldet (pga. procedure), Bortfaldet (pga. tid)/tilbagetaget, Bortfaldet (pga. tid)/ændret besvarelsesform, Endelig, Foreløbig, Foretaget, Forhandlet, Fremmet, Fremsat, Fremsat/henvist til udvalg, Godkendt, Igangværende, Ingen forhandling, Iværksat, Konfirmeret, Lydoptagelse arkiveret, Meddelelse om forhandling, Ophør anmeldt, Optaget, Planlægges til 3. beh., 2. del, Planlægges til afg., Planlægges til besvarelse, Planlægges til betænkn.afg., På dagsorden, Stedfortræder godkendt, Taget af dagsordenen, Tilbagetaget, Ændret besvarelsesform",2015-09-24 12:48:31.82
+187,"Sagstrin","titel","Titlen på aktivitet (sagstrin/møde…) F.eks. Anmeldelse, Skriftlig besvarelse",2015-09-24 12:48:31.82
+188,"Sagstrin","typeid","Typer: 1. (eneste) behandling, 1. behandling, 1. behandling., 2. behandling, 3. behandling, Afgivelse, Anmeld. af orlovs/stedftr. ophør, Anmeldelse, Behandling, Behandling - hasteforespørgsel, Beretning, Beretning, sal, Beretning, udvalg, Besvarelse, foreløbig, Besvarelse, mundtlig, Besvarelse, skriftlig, Betænkning, Betænkning og indstilling, Deputation, Eneste behandling, Foretagelse, Forhandling, Forhandlingsoplæg, Fornyet udvalgsbehandling, Forslaget som fremsat, Forslaget som vedtaget, Fremme, Fremsættelse, Fremsættelse (en beh.), Frist for spørgsmål, Frist for svar, Godk. stedfortræder, Godkendelse af orlov, Lovforslag som fremsat, Lovforslag som vedtaget, Lovforslaget optrykt efter 2. behandling, Meddelelse om forhandling, Meddelelse om mundtlig indstilling, Omtrykt, Optaget af, Rådsmødepunkt, Samråd, Supplerende besvarelse, Tilbagetagelse, Tilføjelse til betænkning, Tilføjelse til tillægsbetænkning, Tillægsbetænkning, Udvalgberetning, Udvalgsbehandling, Udvalgsberetning, Ugeplan, Ændringsforslag til 2. behandling, Ændringsforslag til 3. behandling, Ændringsforslag uden for betænkning, Ændringsforslag uden for betænkning/til 2. behandling, Ændringsforslag uden for tilføjelse til betænkning, Ændringsforslag uden for tilføjelse til tillægsbetænkning, Ændringsforslag uden for tillægsbetænkning, Ændringsforslag uden for tillægsbetænkning/til 3. behandling, Åbent samråd",2015-09-24 12:48:31.82
+189,"SagstrinAktør","aktørid","En Aktør kan medvirke i flere Sagstrin.",2015-09-24 12:48:31.82
+190,"SagstrinAktør","id","Unik identifikation af relationen imellem sagstrin og aktør",2015-09-24 12:48:31.82
+191,"SagstrinAktør","rolleid","En Aktør er tilknyttet et Sagstrin via en rolle.",2015-09-24 12:48:31.82
+192,"SagstrinAktør","sagstrinid","En Aktør kan være tilknyttet et Sagstrin med en rolle..",2015-09-24 12:48:31.82
+193,"SagstrinAktørRolle","id","Unik identifikation af rolle på relationen imellem sagstrin og aktør",2015-09-24 12:48:31.82
+194,"SagstrinAktørRolle","rolle","En Aktør er tilknyttet et Sagstrin via en rolle.",2015-09-24 12:48:31.82
+195,"SagstrinDokument","dokumentid","Et dokument kan være knyttet til et sagstrin. Dette gælder for mange af de dokumenter (forslag, betænkninger, mv.), som bruges i forbindelse med arbejdet i folketingssalen.",2015-09-24 12:48:31.82
+196,"SagstrinDokument","id","Unik identifikation af relationen imellem sagstrin og dokument",2015-09-24 12:48:31.82
+197,"SagstrinDokument","sagstrinid",NA,2015-09-24 12:48:31.82
+198,"SagstrinSagstrin","andetsagstrinid",NA,2015-09-24 12:48:31.82
+199,"SagstrinSagstrin","førstesagstrinid",NA,2015-09-24 12:48:31.82
+200,"SagstrinSagstrin","id","Unik identifikation af relationen imellem sagstrin og sagstrin",2015-09-24 12:48:31.82
+201,"Sagstrinsstatus","id","Unik identifikation af sagstrinsstatus",2015-09-24 12:48:31.82
+202,"Sagstrinsstatus","status","Fuld liste: Afgivet, Afgivet/mundtligt, Afgivet/mundtligt og skriftligt, Afgivet/skriftligt, Afholdt, Aflyst, Anmeldt, Behandlet, Behandlet/afbrudt, Behandlet/Direkte til 2. beh., Behandlet/Direkte til 3. beh., Behandlet/Forkastet, Behandlet/Henvist til udvalg, Behandlet/Vedtaget, Behandling afbrudt/henvist til udvalg, Behandling afbrudt/udsat, Beretning afgivet, Besvaret, Betænkning afgivet, Bortfaldet (pga. procedure), Bortfaldet (pga. tid)/tilbagetaget, Bortfaldet (pga. tid)/ændret besvarelsesform, Endelig, Foreløbig, Foretaget, Forhandlet, Fremmet, Fremsat, Fremsat/henvist til udvalg, Godkendt, Igangværende, Ingen forhandling, Iværksat, Konfirmeret, Lydoptagelse arkiveret, Meddelelse om forhandling, Ophør anmeldt, Optaget, Planlægges til 3. beh., 2. del, Planlægges til afg., Planlægges til besvarelse, Planlægges til betænkn.afg., På dagsorden, Stedfortræder godkendt, Taget af dagsordenen, Tilbagetaget, Ændret besvarelsesform",2015-09-24 12:48:31.82
+203,"Sagstrinstype","id","Unik identifikation af sagstrinstype",2015-09-24 12:48:31.82
+204,"Sagstrinstype","type","Typer: 1. (eneste) behandling, 1. behandling, 1. behandling., 2. behandling, 3. behandling, Afgivelse, Anmeld. af orlovs/stedftr. ophør, Anmeldelse, Behandling, Behandling - hasteforespørgsel, Beretning, Beretning, sal, Beretning, udvalg, Besvarelse, foreløbig, Besvarelse, mundtlig, Besvarelse, skriftlig, Betænkning, Betænkning og indstilling, Deputation, Eneste behandling, Foretagelse, Forhandling, Forhandlingsoplæg, Fornyet udvalgsbehandling, Forslaget som fremsat, Forslaget som vedtaget, Fremme, Fremsættelse, Fremsættelse (en beh.), Frist for spørgsmål, Frist for svar, Godk. stedfortræder, Godkendelse af orlov, Lovforslag som fremsat, Lovforslag som vedtaget, Lovforslaget optrykt efter 2. behandling, Meddelelse om forhandling, Meddelelse om mundtlig indstilling, Omtrykt, Optaget af, Rådsmødepunkt, Samråd, Supplerende besvarelse, Tilbagetagelse, Tilføjelse til betænkning, Tilføjelse til tillægsbetænkning, Tillægsbetænkning, Udvalgberetning, Udvalgsbehandling, Udvalgsberetning, Ugeplan, Ændringsforslag til 2. behandling, Ændringsforslag til 3. behandling, Ændringsforslag uden for betænkning, Ændringsforslag uden for betænkning/til 2. behandling, Ændringsforslag uden for tilføjelse til betænkning, Ændringsforslag uden for tilføjelse til tillægsbetænkning, Ændringsforslag uden for tillægsbetænkning, Ændringsforslag uden for tillægsbetænkning/til 3. behandling, Åbent samråd",2015-09-24 12:48:31.82
+205,"Sagstype","id","Unik identifikation af sagstype",2015-09-24 12:48:31.82
+206,"Sagstype","type","Typer: ""Lovforslag"", ""Beslutningsforslag"", ""Redegørelse"", ""Forespørgsel"", ""Forslag til vedtagelse"", ""§ 20-spørgsmål"", ""Aktstykke"", ""Alm. del"", ""UMF-del"", ""Kommissionsforslag"", ""Indkaldelse af stedfortræder"", ""Statsrevisorerne""",2015-09-24 12:48:31.82
+207,"Slettet","id","Unik identifikation af sletningen",2015-09-24 12:48:31.82
+208,"Slettet","objektid",NA,2015-09-24 12:48:31.82
+209,"Slettet","slettetmapid",NA,2015-09-24 12:48:31.82
+210,"SlettetMap","datatype",NA,2015-09-24 12:48:31.82
+211,"SlettetMap","id","Unik identifikation af den slettede type",2015-09-24 12:48:31.82
+212,"Stemme","afstemningid","En afstemning er medlemmernes stemmeaf-givelse.",2015-09-24 12:48:31.82
+213,"Stemme","aktørid",NA,2015-09-24 12:48:31.82
+214,"Stemme","id","Unik identifikation af stemme",2015-09-24 12:48:31.82
+215,"Stemme","typeid","For, imod, hverken for eller imod, fraværende, valgmulighed",2015-09-24 12:48:31.82
+216,"Stemmetype","id","Unik identifikation af stemmetype",2015-09-24 12:48:31.82
+217,"Stemmetype","type","Stemme type",2015-09-24 12:48:31.82
+218,"SyncLogger","antal",NA,2015-09-24 12:48:31.82
+219,"SyncLogger","eksternId",NA,2015-09-24 12:48:31.82
+220,"SyncLogger","entitet",NA,2015-09-24 12:48:31.82
+221,"SyncLogger","godkendtdato",NA,2015-09-24 12:48:31.82
+222,"SyncLogger","id",NA,2015-09-24 12:48:31.82
+223,"SyncLogger","internId",NA,2015-09-24 12:48:31.82
