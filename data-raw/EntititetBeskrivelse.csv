@@ -1,0 +1,40 @@
+"id","entitetnavn","beskrivelse","opdateringsdato"
+0,"Afstemning","Afstemning indeholder overordnet information vedrørende afstemninger.",2015-09-24 12:48:21.417
+1,"Afstemningstype","Typen af afstemning",2015-09-24 12:48:21.417
+2,"Aktør","Aktør er en samlet betegnelse for de personer, grupper og organisationer, som har roller i det parlamentariske arbejde.",2015-09-24 12:48:21.417
+3,"AktørAktør","Relation imellem Person og Gruppe. Alternativt Gruppe og Gruppe.",2015-09-24 12:48:21.417
+4,"AktørAktørRolle","Rolle, der beskriver relationen mellem Person og Gruppe (fx ´Medlem´, ´Orlov med vederlag´)",2015-09-24 12:48:21.417
+5,"Dagsordenspunkt","Et Dagsordenspunkt er et emne, der behandles på  et møde i en Gruppe.",2015-09-24 12:48:21.417
+6,"Dokument","Et dokument er et journalkort med metadata om  en eller flere tilknyttede filer. Spørgsmålsdokumenter indeholder spørgsmåls fulde ordlyd.Se også Dokumenttype og Dokumentkategori.",2015-09-24 12:48:21.417
+7,"DokumentAktør","Relationen mellem dokument og aktør med en rolle – fx (et spørgsmåls) ´Stiller´ og ´Adressat´ (modtager)",2015-09-24 12:48:21.417
+8,"DokumentAktørRolle","Roller, der optræder på relationen mellem dokument og aktør.",2015-09-24 12:48:21.417
+9,"Dokumentkategori","Dokumentkategori er en underinddeling af dokumenttype.",2015-09-24 12:48:21.417
+10,"Dokumentstatus","Betegner dokumentets tilstand. Et færdigtbearbejdet dokument angives som ´Endelig´. Kun endelige dokumenter udstilles i Åbne Data. ´Tilbagetaget´ angiver, at et endeligt dokument er taget tilbage (fx af et spørgsmåls stiller)",2015-09-24 12:48:21.417
+11,"Emneord","Emneord er ""tags"" som tilknyttes sager og dokumentation til brug for søgning eller lignende.",2015-09-24 12:48:21.417
+12,"Emneordstype","Typen af emneord",2015-09-24 12:48:21.417
+13,"Fil","Indeholder metadata om filer på dokumenter. Se Dokument.",2015-09-24 12:48:21.417
+14,"Møde","Et Møde er et møde i Folketingets plenum (´Møde i salen´) eller et udvalg (´Udvalgsmøde´), se Mødetype.",2015-09-24 12:48:21.417
+15,"EntitetBeskrivelse","Indeholder metadata beskrivelser for de enkelte entiteter. Beskrivelsen er den der benyttes i databrowseren",2015-09-24 12:48:21.417
+16,"MødeAktør","Relationen mellem et Møde og en Gruppe",2015-09-24 12:48:21.417
+17,"KolloneBeskrivelse","Indeholder metadata beskrivelser for de enkelte kolloner i entiteterne. Beskrivelsen er den der benyttes i databrowseren.",2015-09-24 12:48:21.417
+18,"Mødestatus","Mødestatus udtrykker status for afholdelse af mødet.",2015-09-24 12:48:21.417
+19,"Mødetype","Mødetypen angiver, om mødet er i Folketingets plenum (´Møde i salen´)  eller i et udvalg (´Udvalgsmøde´).",2015-09-24 12:48:21.417
+20,"Omtryk","I tilfælde af væsentlige mangler og fejl  i allerede offentliggjorte dokumenter eller ved ændringer i disses tilstand (fx tilbagetagelse) omtrykkes dokumenterne.",2015-09-24 12:48:21.417
+21,"Periode","En Periode er et datointerval, der kan være  navngiven , ved den titel, kode og type.",2015-09-24 12:48:21.417
+22,"Sag","En sag er en forekomst af de sagstyper (se Sagstype), der behandles i det parlamentariske arbejde, og som er beskrevet i Folketingets forretningsorden",2015-09-24 12:48:21.417
+23,"SagAktør","Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist til´(gruppe)",2015-09-24 12:48:21.417
+24,"SagAktørRolle","Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist til´(gruppe)",2015-09-24 12:48:21.417
+25,"SagDokument","Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist til´(gruppe)",2015-09-24 12:48:21.417
+26,"SagDokumentRolle","Roller, der optræder på relationen mellem en sag og et dokument",2015-09-24 12:48:21.417
+27,"Sagskategori","En Sagskategori er en evt. undertype af Sagstype.",2015-09-24 12:48:21.417
+28,"Sagsstatus","Sagsstatus angiver, hvor langt Sagen er nået i sin behandling.",2015-09-24 12:48:21.417
+29,"Sagstrin","Et Sagstrin er en aktivitet i forhold til en Sag. En sag kan have tilknyttet flere sagstrin i et forretningsbestemt forløb  ",2015-09-24 12:48:21.417
+30,"SagstrinAktør","En Aktør er tilknyttet et Sagstrin via en rolle.",2015-09-24 12:48:21.417
+31,"SagstrinAktørRolle","Roller, der optræder på relationen mellem sagstrin og aktør.",2015-09-24 12:48:21.417
+32,"SagstrinDokument","Relation mellem et sagstrin og et dokument",2015-09-24 12:48:21.417
+33,"SagstrinSagstrin","Relationen mellem sagstrin på to eller flere sager – bruges fx ved sambehandling af flere lovforslag, men kan og også forekomme på tværs af sagstyper.",2015-09-24 12:48:21.417
+34,"Sagstrinsstatus","Angiver status for Sagstrinnet.",2015-09-24 12:48:21.417
+35,"Sagstrinstype","Angiver type  af aktivitet – fx 1. behandling Sagstrinstyper er sagstypespecifikke.",2015-09-24 12:48:21.417
+36,"Sagstype","De typer sager, der behandles i det parlamentariske arbejde, jf. Folketingets forretningsorden.",2015-09-24 12:48:21.417
+37,"Slettet","Liste af slettede entiteter",2015-09-24 12:48:21.417
+38,"Stemme","Stemme udtrykker et  medlems indstilling (for, imod, hverken for eller imod) til et givent anliggende, der er genstand for en afstemning.",2015-09-24 12:48:21.417
