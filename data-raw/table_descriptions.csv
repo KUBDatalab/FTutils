@@ -1,0 +1,51 @@
+"table_name","description"
+"__RefactorLog",NA
+"Afstemning","Afstemning indeholder overordnet information vedrørende afstemninger."
+"Afstemningstype","Typen af afstemning"
+"Aktør","Aktør er en samlet betegnelse for de personer, grupper og organisationer, som har roller i det parlamentariske arbejde."
+"AktørAktør","Relation imellem Person og Gruppe. Alternativt Gruppe og Gruppe."
+"AktørAktørRolle","Rolle, der beskriver relationen mellem Person og Gruppe (fx ´Medlem´, ´Orlov med vederlag´)"
+"Aktørtype",NA
+"Dagsordenspunkt","Et Dagsordenspunkt er et emne, der behandles på  et møde i en Gruppe."
+"DagsordenspunktDokument",NA
+"DagsordenspunktSag",NA
+"Dokument","Et dokument er et journalkort med metadata om  en eller flere tilknyttede filer. Spørgsmålsdokumenter indeholder spørgsmåls"
+"DokumentAktør","Relationen mellem dokument og aktør med en rolle – fx (et spørgsmåls) ´Stiller´ og ´Adressat´ (modtager)"
+"DokumentAktørRolle","Roller, der optræder på relationen mellem dokument og aktør."
+"Dokumentkategori","Dokumentkategori er en underinddeling af dokumenttype."
+"Dokumentstatus","Betegner dokumentets tilstand. Et færdigtbearbejdet dokument angives som ´Endelig´. Kun endelige dokumenter udstilles i Åbn"
+"Dokumenttype",NA
+"Emneord","Emneord er ""tags"" som tilknyttes sager og dokumentation til brug for søgning eller lignende."
+"EmneordDokument",NA
+"EmneordSag",NA
+"Emneordstype","Typen af emneord"
+"EntitetBeskrivelse",NA
+"Fil","Indeholder metadata om filer på dokumenter. Se Dokument."
+"IdMap",NA
+"KolloneBeskrivelse",NA
+"Møde","Et Møde er et møde i Folketingets plenum (´Møde i salen´) eller et udvalg (´Udvalgsmøde´), se Mødetype."
+"MødeAktør","Relationen mellem et Møde og en Gruppe"
+"Mødestatus","Mødestatus udtrykker status for afholdelse af mødet."
+"Mødetype","Mødetypen angiver, om mødet er i Folketingets plenum (´Møde i salen´)  eller i et udvalg (´Udvalgsmøde´)."
+"Omtryk","I tilfælde af væsentlige mangler og fejl  i allerede offentliggjorte dokumenter eller ved ændringer i disses tilstand (fx ti"
+"Periode","En Periode er et datointerval, der kan være  navngiven , ved den titel, kode og type."
+"Sag","En sag er en forekomst af de sagstyper (se Sagstype), der behandles i det parlamentariske arbejde, og som er beskrevet i Folket"
+"SagAktør","Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist ti"
+"SagAktørRolle","Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist ti"
+"SagDokument","Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist ti"
+"SagDokumentRolle","Roller, der optræder på relationen mellem en sag og et dokument"
+"Sagskategori","En Sagskategori er en evt. undertype af Sagstype."
+"Sagsstatus","Sagsstatus angiver, hvor langt Sagen er nået i sin behandling."
+"Sagstrin","Et Sagstrin er en aktivitet i forhold til en Sag. En sag kan have tilknyttet flere sagstrin i et forretningsbestemt forløb  "
+"SagstrinAktør","En Aktør er tilknyttet et Sagstrin via en rolle."
+"SagstrinAktørRolle","Roller, der optræder på relationen mellem sagstrin og aktør."
+"SagstrinDokument","Relation mellem et sagstrin og et dokument"
+"Sagstrinsstatus","Angiver status for Sagstrinnet."
+"Sagstrinstype","Angiver type  af aktivitet – fx 1. behandling Sagstrinstyper er sagstypespecifikke."
+"Sagstype","De typer sager, der behandles i det parlamentariske arbejde, jf. Folketingets forretningsorden."
+"Sambehandlinger",NA
+"Slettet","Liste af slettede entiteter"
+"SlettetMap",NA
+"Stemme","Stemme udtrykker et  medlems indstilling (for, imod, hverken for eller imod) til et givent anliggende, der er genstand for en a"
+"Stemmetype",NA
+"SyncLogger",NA
