@@ -21,7 +21,9 @@ Imports:
     lubridate,
     readxl,
     magrittr,
-    rlang
+    rlang,
+    httr,
+    jsonlite
 Suggests:
   testthat
 LazyData: true
