@@ -6,6 +6,6 @@ skip_if_offline(host = "oda.ft.dk")
 # simple test for one endpoint
 
 test_that("endpoint returns data", {
-  res <- get_api_afstemning(`$top` = 1)
+  res <- afstemning(`$top` = 1)
   expect_true(is.list(res) || is.data.frame(res))
 })
