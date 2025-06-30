@@ -47,10 +47,126 @@ get_api_afstemningstype <- function(...) {
 #
 # @title get_api_aktstykke
 # @description Access endpoint /api/Aktstykke
-# @param ... Named parameters passed as query parameters
+# @param id Filter by ``id``
+# @param typeid Filter by ``typeid``
+# @param kategoriid Filter by ``kategoriid``
+# @param statusid Filter by ``statusid``
+# @param titel Filter by ``titel``
+# @param titelkort Filter by ``titelkort``
+# @param offentlighedskode Filter by ``offentlighedskode``
+# @param nummer Filter by ``nummer``
+# @param nummerprefix Filter by ``nummerprefix``
+# @param nummernumerisk Filter by ``nummernumerisk``
+# @param nummerpostfix Filter by ``nummerpostfix``
+# @param resume Filter by ``resume``
+# @param afstemningskonklusion Filter by ``afstemningskonklusion``
+# @param periodeid Filter by ``periodeid``
+# @param afgørelsesresultatkode Filter by ``afgørelsesresultatkode``
+# @param baggrundsmateriale Filter by ``baggrundsmateriale``
+# @param opdateringsdato Date used to filter ``opdateringsdato``
+# @param statsbudgetsag Filter by ``statsbudgetsag``
+# @param begrundelse Filter by ``begrundelse``
+# @param paragrafnummer Filter by ``paragrafnummer``
+# @param paragraf Filter by ``paragraf``
+# @param afgørelsesdato Date used to filter ``afgørelsesdato``
+# @param afgørelse Filter by ``afgørelse``
+# @param rådsmødedato Date used to filter ``rådsmødedato``
+# @param lovnummer Filter by ``lovnummer``
+# @param lovnummerdato Date used to filter ``lovnummerdato``
+# @param retsinformationsurl Filter by ``retsinformationsurl``
+# @param fremsatundersagid Filter by ``fremsatundersagid``
+# @param deltundersagid Filter by ``deltundersagid``
+# @param ... Additional query parameters
 # @export
-get_api_aktstykke <- function(...) {
-  ft_get("/api/Aktstykke", ...)
+get_api_aktstykke <- function(id = NULL,
+                              typeid = NULL,
+                              kategoriid = NULL,
+                              statusid = NULL,
+                              titel = NULL,
+                              titelkort = NULL,
+                              offentlighedskode = NULL,
+                              nummer = NULL,
+                              nummerprefix = NULL,
+                              nummernumerisk = NULL,
+                              nummerpostfix = NULL,
+                              resume = NULL,
+                              afstemningskonklusion = NULL,
+                              periodeid = NULL,
+                              afgørelsesresultatkode = NULL,
+                              baggrundsmateriale = NULL,
+                              opdateringsdato = NULL,
+                              statsbudgetsag = NULL,
+                              begrundelse = NULL,
+                              paragrafnummer = NULL,
+                              paragraf = NULL,
+                              afgørelsesdato = NULL,
+                              afgørelse = NULL,
+                              rådsmødedato = NULL,
+                              lovnummer = NULL,
+                              lovnummerdato = NULL,
+                              retsinformationsurl = NULL,
+                              fremsatundersagid = NULL,
+                              deltundersagid = NULL,
+                              ...) {
+  filter_parts <- c()
+
+  add_filter <- function(name, value) {
+    if (is.null(value)) return()
+    if (inherits(value, "Date")) {
+      d <- as.Date(value)
+      filter_parts <<- c(filter_parts,
+        sprintf("year(%s) eq %s and month(%s) eq %s and day(%s) eq %s",
+                name, format(d, "%Y"), name, format(d, "%m"), name, format(d, "%d")))
+    } else if (is.character(value)) {
+      filter_parts <<- c(filter_parts,
+        sprintf("%s eq '%s'", name, value))
+    } else if (is.logical(value)) {
+      filter_parts <<- c(filter_parts,
+        sprintf("%s eq %s", name, tolower(value)))
+    } else {
+      filter_parts <<- c(filter_parts,
+        sprintf("%s eq %s", name, value))
+    }
+  }
+
+  params <- list(id = id,
+                 typeid = typeid,
+                 kategoriid = kategoriid,
+                 statusid = statusid,
+                 titel = titel,
+                 titelkort = titelkort,
+                 offentlighedskode = offentlighedskode,
+                 nummer = nummer,
+                 nummerprefix = nummerprefix,
+                 nummernumerisk = nummernumerisk,
+                 nummerpostfix = nummerpostfix,
+                 resume = resume,
+                 afstemningskonklusion = afstemningskonklusion,
+                 periodeid = periodeid,
+                 afgørelsesresultatkode = afgørelsesresultatkode,
+                 baggrundsmateriale = baggrundsmateriale,
+                 opdateringsdato = opdateringsdato,
+                 statsbudgetsag = statsbudgetsag,
+                 begrundelse = begrundelse,
+                 paragrafnummer = paragrafnummer,
+                 paragraf = paragraf,
+                 afgørelsesdato = afgørelsesdato,
+                 afgørelse = afgørelse,
+                 rådsmødedato = rådsmødedato,
+                 lovnummer = lovnummer,
+                 lovnummerdato = lovnummerdato,
+                 retsinformationsurl = retsinformationsurl,
+                 fremsatundersagid = fremsatundersagid,
+                 deltundersagid = deltundersagid)
+
+  invisible(lapply(names(params), function(nm) add_filter(nm, params[[nm]])))
+
+  if (length(filter_parts) > 0) {
+    filter <- paste(filter_parts, collapse = " and ")
+    ft_get("/api/Aktstykke", `$filter` = filter, ...)
+  } else {
+    ft_get("/api/Aktstykke", ...)
+  }
 }
 
 #
