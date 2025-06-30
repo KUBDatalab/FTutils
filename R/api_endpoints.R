@@ -89,6 +89,15 @@ get_home_getnavigationpropertiesforentity <- function(...) {
 
 #' Afstemning indeholder overordnet information vedrørende afstemninger.
 #' @export
+#' @param id Unik identifikation af Aktør
+#' @param nummer Afstemningsnummer, fortløbende indenfor en periode af typen samling.
+#' @param konklusion Afstemningsresultat, hvor der stemmes om et forslag som helhed (i mods. til ændringsforslag til forslaget) – se også Sag
+#' @param vedtaget Angiver om afstemningen om forslaget eller lign. er vedtaget.
+#' @param kommentar Afstemningskommentar (ændring af stemmer ved fejlafstemninger)
+#' @param mødeid En afstemning foregår i et møde.
+#' @param typeid En afstemning har en type.
+#' @param sagstrinid En afstemning er tilknyttet et sagstrin, som er en behandling.
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_afstemning <- function(
   id = NULL,
   nummer = NULL,
@@ -123,6 +132,9 @@ get_api_afstemning <- function(
 
 #' Typen af afstemning
 #' @export
+#' @param id Unik identifikation af afstemningstype
+#' @param type En afstemning har en type.
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_afstemningstype <- function(
   id = NULL,
   type = NULL,
@@ -217,6 +229,17 @@ get_api_aktstykke <- function(
 
 #' Aktør er en samlet betegnelse for de personer, grupper og organisationer, som har roller i det parlamentariske arbejde.
 #' @export
+#' @param id Unik identifikation af Aktør
+#' @param typeid Intern (person), Udvalg, Parlamentarisk forsamling, Anden gruppe, Folketingsgruppe, Kommission, Ministerområde, Ministertitel
+#' @param gruppenavnkort Forkortelse - hvis aktøren er en gruppe (udvalg, kommission, folketingsgruppe)
+#' @param navn personens for- og efternavn  - ellers lang form af navn
+#' @param fornavn Kun for typen ´Person´
+#' @param efternavn Kun for typen ´Person´
+#' @param biografi Biografi for personen eller gruppen
+#' @param periodeid Kun for udvalg, Folketinget og kommissioner og hverv. I disse tilfælde angiver det gruppens tilknytning til periodetypen ´samling´
+#' @param opdateringsdato Filter på opdateringsdato
+#' @param startdato Kun for grupper, ministertitler- og -områder
+#' @param slutdato Kun for grupper, ministertitler- og -områder
 get_api_aktoer <- function(
   id = NULL,
   typeid = NULL,
@@ -721,6 +744,10 @@ get_api_dokumenttype <- function(
 
 #' Emneord er "tags" som tilknyttes sager og dokumentation til brug for søgning eller lignende.
 #' @export
+#' @param id Unik identifikation af emneord
+#' @param typeid Kode for typerne: Kontrolleret, Ukontrolleret, Lovsagsnavn, Thesaurus (eurovoc), Kontonummer, Sagsområde
+#' @param emneord Navnet på emneord f.eks. "integration", "aktier og værdipapirer" etc.
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_emneord <- function(
   id = NULL,
   typeid = NULL,
@@ -743,6 +770,12 @@ get_api_emneord <- function(
 }
 
 
+#' Relation mellem emneord og dokument
+#' @export
+#' @param id Unik identifikation af relationen imellem emneord og dokument
+#' @param emneordid ID for emneordet
+#' @param dokumentid ID for dokumentet
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_emneorddokument <- function(
   id = NULL,
   emneordid = NULL,
@@ -764,7 +797,12 @@ get_api_emneorddokument <- function(
   }
 }
 
-
+#' Relation mellem et emneord og en sag
+#' @export
+#' @param id Unik identifikation af relationen imellem emneord og sag
+#' @param emneordid ID for emneordet
+#' @param sagid ID for sagen
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_emneordsag <- function(
   id = NULL,
   emneordid = NULL,
@@ -789,6 +827,9 @@ get_api_emneordsag <- function(
 
 #' Typen af emneord
 #' @export
+#' @param id Unik identifikation af emneordstype
+#' @param type Kode for typerne: Kontrolleret, Ukontrolleret, Lovsagsnavn, Thesaurus (eurovoc), Kontonummer, Sagsområde
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_emneordstype <- function(
   id = NULL,
   type = NULL,
@@ -1615,6 +1656,11 @@ get_api_sambehandlinger <- function(
 
 #' Stemme udtrykker et  medlems indstilling (for, imod, hverken for eller imod) til et givent anliggende, der er genstand for en afstemning.
 #' @export
+#' @param id Unik identifikation af stemme
+#' @param typeid For, imod, hverken for eller imod, fraværende, valgmulighed
+#' @param afstemningid En afstemning er medlemmernes stemmeaf-givelse.
+#' @param aktørid ID for aktøren
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_stemme <- function(
   id = NULL,
   typeid = NULL,
@@ -1639,6 +1685,11 @@ get_api_stemme <- function(
 }
 
 
+#' Type af stemme
+#' @export
+#' @param id Unik identifikation af stemmetype
+#' @param type Stemme type
+#' @param opdateringsdato Filter på opdateringsdato
 get_api_stemmetype <- function(
   id = NULL,
   type = NULL,
