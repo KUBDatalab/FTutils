@@ -1,0 +1,303 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "Auto-generated API documentation from API Mapper"
+  },
+  "servers": [
+    {
+      "url": "https://oda.ft.dk"
+    }
+  ],
+  "paths": {
+    "/Home/GetPropertiesForEntity": {
+      "get": {
+        "summary": "GET /Home/GetPropertiesForEntity",
+        "operationId": "getHomeGetPropertiesForEntity",
+        "description": "Endpoint: GET /Home/GetPropertiesForEntity\nTotal calls captured: 2\n\n## Example Requests\n\n### Example 1\n\n```bash\ncurl -X GET \\\n  'https://oda.ft.dk/Home/GetPropertiesForEntity?entity=Afstemning' \\\n  -H 'Accept: */*' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \\\n  -H 'X-Requested-With: XMLHttpRequest'\n```\n\n**Response Status:** 200\n\n## Query Parameters\n\n- `entity`\n\n## Custom Headers\n\n- `sec-ch-ua-platform`\n- `X-Requested-With`\n- `sec-ch-ua`\n- `DNT`\n- `sec-ch-ua-mobile`\n- `Sec-Fetch-Site`\n- `Sec-Fetch-Mode`\n- `Sec-Fetch-Dest`\n\n",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "entity",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Afstemning"
+          },
+          {
+            "name": "sec-ch-ua-platform",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "X-Requested-With",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "XMLHttpRequest"
+          },
+          {
+            "name": "sec-ch-ua",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "DNT",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sec-ch-ua-mobile",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Site",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Mode",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Dest",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          }
+        ]
+      }
+    },
+    "/Home/GetNavigationPropertiesForEntity": {
+      "get": {
+        "summary": "GET /Home/GetNavigationPropertiesForEntity",
+        "operationId": "getHomeGetNavigationPropertiesForEntity",
+        "description": "Endpoint: GET /Home/GetNavigationPropertiesForEntity\nTotal calls captured: 2\n\n## Example Requests\n\n### Example 1\n\n```bash\ncurl -X GET \\\n  'https://oda.ft.dk/Home/GetNavigationPropertiesForEntity?entity=Afstemning' \\\n  -H 'Accept: */*' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \\\n  -H 'X-Requested-With: XMLHttpRequest'\n```\n\n**Response Status:** 200\n\n## Query Parameters\n\n- `entity`\n\n## Custom Headers\n\n- `sec-ch-ua-platform`\n- `X-Requested-With`\n- `sec-ch-ua`\n- `DNT`\n- `sec-ch-ua-mobile`\n- `Sec-Fetch-Site`\n- `Sec-Fetch-Mode`\n- `Sec-Fetch-Dest`\n\n",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "entity",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Afstemning"
+          },
+          {
+            "name": "sec-ch-ua-platform",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "X-Requested-With",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "XMLHttpRequest"
+          },
+          {
+            "name": "sec-ch-ua",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "DNT",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sec-ch-ua-mobile",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Site",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Mode",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Dest",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          }
+        ]
+      }
+    },
+    "/api/Afstemning": {
+      "get": {
+        "summary": "GET /api/Afstemning",
+        "operationId": "getapiAfstemning",
+        "description": "Endpoint: GET /api/Afstemning\nTotal calls captured: 2\n\n## Example Requests\n\n### Example 1\n\n```bash\ncurl -X GET \\\n  'https://oda.ft.dk/api/Afstemning?$inlinecount=allpages' \\\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \\\n  -H 'X-Requested-With: XMLHttpRequest'\n```\n\n**Response Status:** 200\n\n## Query Parameters\n\n- `$inlinecount`\n\n## Custom Headers\n\n- `sec-ch-ua-platform`\n- `X-Requested-With`\n- `sec-ch-ua`\n- `DNT`\n- `sec-ch-ua-mobile`\n- `Sec-Fetch-Site`\n- `Sec-Fetch-Mode`\n- `Sec-Fetch-Dest`\n\n",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "$inlinecount",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "allpages"
+          },
+          {
+            "name": "sec-ch-ua-platform",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "X-Requested-With",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "XMLHttpRequest"
+          },
+          {
+            "name": "sec-ch-ua",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "DNT",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sec-ch-ua-mobile",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Site",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Mode",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "Sec-Fetch-Dest",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
