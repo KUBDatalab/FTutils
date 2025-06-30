@@ -23,7 +23,8 @@ Imports:
     magrittr,
     rlang,
     httr,
-    jsonlite
+    jsonlite,
+    xml2
 Suggests:
   testthat
 LazyData: true
