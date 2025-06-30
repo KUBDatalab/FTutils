@@ -8,6 +8,40 @@ ft_get <- function(path, ...) {
   httr::content(res, encoding = "UTF-8")
 }
 
+# internal helper to validate parameters for Aktstykke
+validate_aktstykke_params <- function(params) {
+  meta_path <- system.file("extdata", "metadata", package = "FTutils")
+  if (meta_path == "") meta_path <- "inst/extdata/metadata"
+  if (!file.exists(meta_path)) return(invisible(NULL))
+
+  doc <- xml2::read_xml(meta_path)
+  ns <- xml2::xml_ns(doc)
+  node <- xml2::xml_find_first(doc,
+    ".//d1:EntityType[@Name='Aktstykke']", ns)
+  props <- xml2::xml_find_all(node, "d1:Property", ns)
+  p_names <- xml2::xml_attr(props, "Name")
+  p_types <- xml2::xml_attr(props, "Type")
+  type_map <- stats::setNames(p_types, p_names)
+
+  check_fun <- function(value, type) {
+    switch(type,
+      "Edm.Int32" = is.numeric(value) && all(!is.na(value)) && all(value %% 1 == 0),
+      "Edm.Boolean" = is.logical(value),
+      "Edm.DateTime" = inherits(value, c("Date", "POSIXt")),
+      "Edm.String" = is.character(value),
+      TRUE)
+  }
+
+  for (nm in names(params)) {
+    val <- params[[nm]]
+    if (is.null(val)) next
+    t <- type_map[[nm]]
+    if (!is.null(t) && !check_fun(val, t)) {
+      stop(sprintf("%s must be of type %s", nm, gsub("Edm.", "", t)), call. = FALSE)
+    }
+  }
+}
+
 #
 # @title get_home_getpropertiesforentity
 # @description Access endpoint /Home/GetPropertiesForEntity
@@ -108,27 +142,6 @@ get_api_aktstykke <- function(id = NULL,
                               fremsatundersagid = NULL,
                               deltundersagid = NULL,
                               ...) {
-  filter_parts <- c()
-
-  add_filter <- function(name, value) {
-    if (is.null(value)) return()
-    if (inherits(value, "Date")) {
-      d <- as.Date(value)
-      filter_parts <<- c(filter_parts,
-        sprintf("year(%s) eq %s and month(%s) eq %s and day(%s) eq %s",
-                name, format(d, "%Y"), name, format(d, "%m"), name, format(d, "%d")))
-    } else if (is.character(value)) {
-      filter_parts <<- c(filter_parts,
-        sprintf("%s eq '%s'", name, value))
-    } else if (is.logical(value)) {
-      filter_parts <<- c(filter_parts,
-        sprintf("%s eq %s", name, tolower(value)))
-    } else {
-      filter_parts <<- c(filter_parts,
-        sprintf("%s eq %s", name, value))
-    }
-  }
-
   params <- list(id = id,
                  typeid = typeid,
                  kategoriid = kategoriid,
@@ -158,6 +171,29 @@ get_api_aktstykke <- function(id = NULL,
                  retsinformationsurl = retsinformationsurl,
                  fremsatundersagid = fremsatundersagid,
                  deltundersagid = deltundersagid)
+
+  validate_aktstykke_params(params)
+
+  filter_parts <- c()
+
+  add_filter <- function(name, value) {
+    if (is.null(value)) return()
+    if (inherits(value, "Date")) {
+      d <- as.Date(value)
+      filter_parts <<- c(filter_parts,
+        sprintf("year(%s) eq %s and month(%s) eq %s and day(%s) eq %s",
+                name, format(d, "%Y"), name, format(d, "%m"), name, format(d, "%d")))
+    } else if (is.character(value)) {
+      filter_parts <<- c(filter_parts,
+        sprintf("%s eq '%s'", name, value))
+    } else if (is.logical(value)) {
+      filter_parts <<- c(filter_parts,
+        sprintf("%s eq %s", name, tolower(value)))
+    } else {
+      filter_parts <<- c(filter_parts,
+        sprintf("%s eq %s", name, value))
+    }
+  }
 
   invisible(lapply(names(params), function(nm) add_filter(nm, params[[nm]])))
 
