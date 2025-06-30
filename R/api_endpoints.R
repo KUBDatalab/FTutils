@@ -87,6 +87,8 @@ get_home_getnavigationpropertiesforentity <- function(...) {
 }
 
 
+#' Afstemning indeholder overordnet information vedrørende afstemninger.
+#' @export
 get_api_afstemning <- function(
   id = NULL,
   nummer = NULL,
@@ -119,6 +121,8 @@ get_api_afstemning <- function(
 }
 
 
+#' Typen af afstemning
+#' @export
 get_api_afstemningstype <- function(
   id = NULL,
   type = NULL,
@@ -211,6 +215,8 @@ get_api_aktstykke <- function(
 }
 
 
+#' Aktør er en samlet betegnelse for de personer, grupper og organisationer, som har roller i det parlamentariske arbejde.
+#' @export
 get_api_aktoer <- function(
   id = NULL,
   typeid = NULL,
@@ -247,6 +253,8 @@ get_api_aktoer <- function(
 }
 
 
+#' Relation imellem Person og Gruppe. Alternativt Gruppe og Gruppe.
+#' @export
 get_api_aktoeraktoer <- function(
   id = NULL,
   fraaktørid = NULL,
@@ -275,6 +283,8 @@ get_api_aktoeraktoer <- function(
 }
 
 
+#' Rolle, der beskriver relationen mellem Person og Gruppe (fx ´Medlem´, ´Orlov med vederlag´)
+#' @export
 get_api_aktoeraktoerrolle <- function(
   id = NULL,
   rolle = NULL,
@@ -387,6 +397,8 @@ get_api_almdel <- function(
 }
 
 
+#' Et Dagsordenspunkt er et emne, der behandles på  et møde i en Gruppe.
+#' @export
 get_api_dagsordenspunkt <- function(
   id = NULL,
   kørebemærkning = NULL,
@@ -543,6 +555,8 @@ get_api_debat <- function(
 }
 
 
+#' Et dokument er et journalkort med metadata om  en eller flere tilknyttede filer. Spørgsmålsdokumenter indeholder spørgsmåls fulde ordlyd.Se også Dokumenttype og Dokumentkategori.
+#' @export
 get_api_dokument <- function(
   id = NULL,
   typeid = NULL,
@@ -593,6 +607,8 @@ get_api_dokument <- function(
 }
 
 
+#' Relationen mellem dokument og aktør med en rolle – fx (et spørgsmåls) ´Stiller´ og ´Adressat´ (modtager)
+#' @export
 get_api_dokumentaktoer <- function(
   id = NULL,
   dokumentid = NULL,
@@ -617,6 +633,8 @@ get_api_dokumentaktoer <- function(
 }
 
 
+#' Roller, der optræder på relationen mellem dokument og aktør.
+#' @export
 get_api_dokumentaktoerrolle <- function(
   id = NULL,
   rolle = NULL,
@@ -637,6 +655,8 @@ get_api_dokumentaktoerrolle <- function(
 }
 
 
+#' Dokumentkategori er en underinddeling af dokumenttype.
+#' @export
 get_api_dokumentkategori <- function(
   id = NULL,
   kategori = NULL,
@@ -657,6 +677,8 @@ get_api_dokumentkategori <- function(
 }
 
 
+#' Betegner dokumentets tilstand. Et færdigtbearbejdet dokument angives som ´Endelig´. Kun endelige dokumenter udstilles i Åbne Data. ´Tilbagetaget´ angiver, at et endeligt dokument er taget tilbage (fx af et spørgsmåls stiller)
+#' @export
 get_api_dokumentstatus <- function(
   id = NULL,
   status = NULL,
@@ -697,6 +719,8 @@ get_api_dokumenttype <- function(
 }
 
 
+#' Emneord er "tags" som tilknyttes sager og dokumentation til brug for søgning eller lignende.
+#' @export
 get_api_emneord <- function(
   id = NULL,
   typeid = NULL,
@@ -763,6 +787,8 @@ get_api_emneordsag <- function(
 }
 
 
+#' Typen af emneord
+#' @export
 get_api_emneordstype <- function(
   id = NULL,
   type = NULL,
@@ -783,6 +809,8 @@ get_api_emneordstype <- function(
 }
 
 
+#' Indeholder metadata beskrivelser for de enkelte entiteter. Beskrivelsen er den der benyttes i databrowseren
+#' @export
 get_api_entitetbeskrivelse <- function(
   id = NULL,
   entitetnavn = NULL,
@@ -877,6 +905,8 @@ get_api_eusag <- function(
 }
 
 
+#' Indeholder metadata om filer på dokumenter. Se Dokument.
+#' @export
 get_api_fil <- function(
   id = NULL,
   dokumentid = NULL,
@@ -979,6 +1009,8 @@ get_api_forslag <- function(
 }
 
 
+#' Indeholder metadata beskrivelser for de enkelte kolloner i entiteterne. Beskrivelsen er den der benyttes i databrowseren.
+#' @export
 get_api_kollonebeskrivelse <- function(
   id = NULL,
   entitetnavn = NULL,
@@ -1003,6 +1035,8 @@ get_api_kollonebeskrivelse <- function(
 }
 
 
+#' Et Møde er et møde i Folketingets plenum (´Møde i salen´) eller et udvalg (´Udvalgsmøde´), se Mødetype.
+#' @export
 get_api_moede <- function(
   id = NULL,
   titel = NULL,
@@ -1041,6 +1075,8 @@ get_api_moede <- function(
 }
 
 
+#' Relationen mellem et Møde og en Gruppe
+#' @export
 get_api_moedeaktoer <- function(
   id = NULL,
   mødeid = NULL,
@@ -1063,6 +1099,8 @@ get_api_moedeaktoer <- function(
 }
 
 
+#' Mødestatus udtrykker status for afholdelse af mødet.
+#' @export
 get_api_moedestatus <- function(
   id = NULL,
   status = NULL,
@@ -1083,6 +1121,8 @@ get_api_moedestatus <- function(
 }
 
 
+#' Mødetypen angiver, om mødet er i Folketingets plenum (´Møde i salen´)  eller i et udvalg (´Udvalgsmøde´).
+#' @export
 get_api_moedetype <- function(
   id = NULL,
   type = NULL,
@@ -1103,6 +1143,8 @@ get_api_moedetype <- function(
 }
 
 
+#' I tilfælde af væsentlige mangler og fejl  i allerede offentliggjorte dokumenter eller ved ændringer i disses tilstand (fx tilbagetagelse) omtrykkes dokumenterne.
+#' @export
 get_api_omtryk <- function(
   id = NULL,
   dokumentid = NULL,
@@ -1127,6 +1169,8 @@ get_api_omtryk <- function(
 }
 
 
+#' En Periode er et datointerval, der kan være  navngiven , ved den titel, kode og type.
+#' @export
 get_api_periode <- function(
   id = NULL,
   startdato = NULL,
@@ -1155,6 +1199,8 @@ get_api_periode <- function(
 }
 
 
+#' En sag er en forekomst af de sagstyper (se Sagstype), der behandles i det parlamentariske arbejde, og som er beskrevet i Folketingets forretningsorden
+#' @export
 get_api_sag <- function(
   id = NULL,
   typeid = NULL,
@@ -1227,6 +1273,8 @@ get_api_sag <- function(
 }
 
 
+#' Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist til´(gruppe)
+#' @export
 get_api_sagaktoer <- function(
   id = NULL,
   aktørid = NULL,
@@ -1251,6 +1299,8 @@ get_api_sagaktoer <- function(
 }
 
 
+#' Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist til´(gruppe)
+#' @export
 get_api_sagaktoerrolle <- function(
   id = NULL,
   rolle = NULL,
@@ -1271,6 +1321,8 @@ get_api_sagaktoerrolle <- function(
 }
 
 
+#' Relationen mellem en sag og aktør (person eller gruppe) med en rolle – fx en sags ´Forslagsstiller´ (person), ´Henvist til´(gruppe)
+#' @export
 get_api_sagdokument <- function(
   id = NULL,
   sagid = NULL,
@@ -1299,6 +1351,8 @@ get_api_sagdokument <- function(
 }
 
 
+#' Roller, der optræder på relationen mellem en sag og et dokument
+#' @export
 get_api_sagdokumentrolle <- function(
   id = NULL,
   rolle = NULL,
@@ -1319,6 +1373,8 @@ get_api_sagdokumentrolle <- function(
 }
 
 
+#' En Sagskategori er en evt. undertype af Sagstype.
+#' @export
 get_api_sagskategori <- function(
   id = NULL,
   kategori = NULL,
@@ -1339,6 +1395,8 @@ get_api_sagskategori <- function(
 }
 
 
+#' Sagsstatus angiver, hvor langt Sagen er nået i sin behandling.
+#' @export
 get_api_sagsstatus <- function(
   id = NULL,
   status = NULL,
@@ -1359,6 +1417,8 @@ get_api_sagsstatus <- function(
 }
 
 
+#' Et Sagstrin er en aktivitet i forhold til en Sag. En sag kan have tilknyttet flere sagstrin i et forretningsbestemt forløb  
+#' @export
 get_api_sagstrin <- function(
   id = NULL,
   titel = NULL,
@@ -1393,6 +1453,8 @@ get_api_sagstrin <- function(
 }
 
 
+#' En Aktør er tilknyttet et Sagstrin via en rolle.
+#' @export
 get_api_sagstrinaktoer <- function(
   id = NULL,
   sagstrinid = NULL,
@@ -1417,6 +1479,8 @@ get_api_sagstrinaktoer <- function(
 }
 
 
+#' Roller, der optræder på relationen mellem sagstrin og aktør.
+#' @export
 get_api_sagstrinaktoerrolle <- function(
   id = NULL,
   rolle = NULL,
@@ -1437,6 +1501,8 @@ get_api_sagstrinaktoerrolle <- function(
 }
 
 
+#' Relation mellem et sagstrin og et dokument
+#' @export
 get_api_sagstrindokument <- function(
   id = NULL,
   sagstrinid = NULL,
@@ -1459,6 +1525,8 @@ get_api_sagstrindokument <- function(
 }
 
 
+#' Angiver status for Sagstrinnet.
+#' @export
 get_api_sagstrinsstatus <- function(
   id = NULL,
   status = NULL,
@@ -1479,6 +1547,8 @@ get_api_sagstrinsstatus <- function(
 }
 
 
+#' Angiver type  af aktivitet – fx 1. behandling Sagstrinstyper er sagstypespecifikke.
+#' @export
 get_api_sagstrinstype <- function(
   id = NULL,
   type = NULL,
@@ -1499,6 +1569,8 @@ get_api_sagstrinstype <- function(
 }
 
 
+#' De typer sager, der behandles i det parlamentariske arbejde, jf. Folketingets forretningsorden.
+#' @export
 get_api_sagstype <- function(
   id = NULL,
   type = NULL,
@@ -1541,6 +1613,8 @@ get_api_sambehandlinger <- function(
 }
 
 
+#' Stemme udtrykker et  medlems indstilling (for, imod, hverken for eller imod) til et givent anliggende, der er genstand for en afstemning.
+#' @export
 get_api_stemme <- function(
   id = NULL,
   typeid = NULL,
