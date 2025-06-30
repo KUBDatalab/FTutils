@@ -452,10 +452,42 @@ get_api_sagstype <- function(...) {
 #
 # @title get_api_sambehandlinger
 # @description Access endpoint /api/Sambehandlinger
-# @param ... Named parameters passed as query parameters
+# @param andetsagstrinid Filter by ``andetsagstrinid``
+# @param foerstesagstrinid Filter by ``førstesagstrinid``
+# @param opdateringsdato Date used to filter ``opdateringsdato``
+# @param ... Additional query parameters
 # @export
-get_api_sambehandlinger <- function(...) {
-  ft_get("/api/Sambehandlinger", ...)
+get_api_sambehandlinger <- function(andetsagstrinid = NULL,
+                                    foerstesagstrinid = NULL,
+                                    opdateringsdato = NULL,
+                                    ...) {
+  filter_parts <- c()
+
+  if (!is.null(andetsagstrinid)) {
+    filter_parts <- c(filter_parts,
+                      paste0("andetsagstrinid eq ", andetsagstrinid))
+  }
+
+  if (!is.null(foerstesagstrinid)) {
+    filter_parts <- c(filter_parts,
+                      paste0("førstesagstrinid eq ", foerstesagstrinid))
+  }
+
+  if (!is.null(opdateringsdato)) {
+    d <- as.Date(opdateringsdato)
+    filter_parts <- c(filter_parts,
+                      sprintf("year(opdateringsdato) eq %s and month(opdateringsdato) eq %s and day(opdateringsdato) eq %s",
+                              format(d, "%Y"),
+                              format(d, "%m"),
+                              format(d, "%d")))
+  }
+
+  if (length(filter_parts) > 0) {
+    filter <- paste(filter_parts, collapse = " and ")
+    ft_get("/api/Sambehandlinger", `$filter` = filter, ...)
+  } else {
+    ft_get("/api/Sambehandlinger", ...)
+  }
 }
 
 #
