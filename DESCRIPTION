@@ -7,7 +7,7 @@ Authors@R: c(
     person("Christian", "Knudsen", , "cbk@kb.dk", role = c("aut"),
            comment = c(ORCID = "0000-0002-9816-768X"))           
            )
-Description: What the package does (one paragraph).
+Description: Utilities and datasets for analysing the Danish Parliament.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
